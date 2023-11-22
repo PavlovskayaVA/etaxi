@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>etaxi About Us</title>
     <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/styleAboutUs.css"/>
   </head>
   <body>
     <header id="header-section">
       <div class="container">
-          <div class="actual-city">
-              <div class="actual-city-top">
-                  <figure class="city-img-actual">
-                      <img src="img/location_city.svg" alt="location icon">
-                  </figure>
-                  <h4 class="city-text">Ваш город <span class="your-city">Иркутск</span>?</h4>
-              </div>
-              <div class="actual-city-bottom">
-                  <button class="button actual-city__button actual-city__button--yellow">Всё верно</button>
-                  <button class="actual-city__button actual-city__button--white">Выбрать город</button>
-              </div>
+        <div class="actual-city">
+          <div class="actual-city-top">
+              <figure class="city-img-actual">
+                  <img src="img/location_city.svg" alt="location icon">
+              </figure>
+              <h4 class="city-text">Ваш город <span class="your-city">Иркутск</span>?</h4>
           </div>
+          <div class="actual-city-bottom">
+              <button class="button actual-city__button actual-city__button--yellow">Всё верно</button>
+              <button class="actual-city__button actual-city__button--white">Выбрать город</button>
+          </div>
+      </div>
           <div class="header">
               <div class="header-logo">
-                  <a href="index.html"><img class="header-logo__img" src="img/logo.svg" alt="etaxi logo"></a>
+                  <img class="header-logo__img" src="img/logo.svg" alt="etaxi logo">
               </div>
               <div class="header-description">
                   <div class="header-top">
@@ -52,7 +53,7 @@
                               <li class="header-nav__item"><a class="header-nav__link" href="pageAboutUs.html">О нас</a></li>
                               <li class="header-nav__item"><a class="header-nav__link" href="index.html#rent">Условия аренды</a></li>
                               <li class="header-nav__item"><a class="header-nav__link" href="index.html#reviews">Отзывы</a></li>
-                              <li class="header-nav__item"><a class="header-nav__link" href="pageContacts#contacts">Контакты</a></li>
+                              <li class="header-nav__item"><a class="header-nav__link" href="index.html#contacts">Контакты</a></li>
                           </ul>
                       </nav>
                       <button class="button header-nav__button">Оставить заявку</button>
@@ -60,40 +61,30 @@
               </div>
           </div>
        </div>   
-    </header>
+  </header>
     <main id="main-section">
       <form class="application-form" action="index.html" method="post">
         <figure class="application-close">
             <img src="img/close-form.svg">
         </figure>
-        <h2 class="application-subtitle">Оставьте заявку</h2>
+        <h2 class="application-subtitle">Оставите заявку</h2>
         <h3 class="application-text">Первый день аренды авто бесплатно!</h3>
         <input class="application-input" type="text" name="name" placeholder="Ваше имя" required></input>
         <input class="application-input" type="tel" name="tel" placeholder="+7 (999) 999-99-99" required></input>
-        <div class="dropDown-main">
-            <div class="dropDown-main-selectCity">
-              <input class="dropDown-main-city" placeholder="Выберите город"></input>
-              <figure class="dropDown-main-img-down">
-                <img src="img/dropDown_Down.svg" alt="expand more">
-              </figure>
-              <figure class="dropDown-main-img-up">
-                <img src="img/dropDown_Up.svg" alt="expand more">
-              </figure>
-            </div>
-            <div class="dropDown-main-list">
-                    <div class="dropDown-main__item">Иркутск</div>
-                    <div class="dropDown-main__item">Барнаул</div>
-                    <div class="dropDown-main__item">Екатеринбург</div>
-                    <div class="dropDown-main__item">Кемерово</div>
-                    <div class="dropDown-main__item">Красноярск</div>
-                    <div class="dropDown-main__item">Новосибирск</div>
-                    <div class="dropDown-main__item">Новокузнецк</div>
-                    <div class="dropDown-main__item">Омск</div>
-                    <div class="dropDown-main__item">Томск</div>
-                    <div class="dropDown-main__item">Тюмень</div>
-                    <div class="dropDown-main__item">Улан-Удэ</div>
-            </div>
-          </div>
+        <select class="main-select" name="city">
+          <option value="" selected>Выберите город</option>
+          <option value="Irkutsk">Иркутск</option>
+          <option value="Barnaul">Барнаул</option>
+          <option value="Ekaterinburg">Екатеринбург</option>
+          <option value="Kemerovo">Кемерово</option>
+          <option value="Krasnoiarsk">Красноярск</option>
+          <option value="Novosibirsk">Новосибирск</option>
+          <option value="Novokuznetsk">Новокузнецк</option>
+          <option value="Omsk">Омск</option>
+          <option value="Tomsk">Томск</option>
+          <option value="Tiumen">Тюмень</option>
+          <option value="Ulan-Ude">Улан-Удэ</option>
+      </select>
         <button class="button application-button">Оставить заявку</button>
         <div class="application-checkbox">
             <input class="custom-checkbox" type="checkbox" id="confirmation" name="confirmation"/>
@@ -142,8 +133,8 @@
              </figure>
              <div class="slogan">
               <div class="slogan__container">
+                <img src="./img/begin.svg" alt="begin">
                 <div class="slogan__container-title">
-                  <img src="./img/begin.svg" alt="begin">
                   <h2>Первоочередная задача <br>нашего парка-</h2>
                 </div>
                 <h2 class="slogan__container-title-yellow">это повышение дохода водителя</h2>
@@ -396,7 +387,7 @@
       <div class="footer-inner">
         <div class="footer-up">
           <div class="footer-logo">
-            <a href="index.html"><img class="footer-logo__img" src="img/logo.svg" alt="etaxi logo"></a>
+            <img class="footer-logo__img" src="img/logo.svg" alt="etaxi logo">
           </div>
           <div class="footer-phone-social">
             <a class="footer-phone" href="tel:+73822984033">+7 (382) 298-40-33</a>
@@ -421,7 +412,7 @@
                 <a class="nav__link-footer" href="index.html#catalog">Каталог</a>
               </li>
               <li class="nav__item-footer">
-                <a class="nav__link-footer" href="pageAboutUs.html#about">О нас</a>
+                <a class="nav__link-footer" href="pageAnoutUs.html">О нас</a>
               </li>
               <li class="nav__item-footer">
                 <a class="nav__link-footer" href="index.html#rent">Условия аренды</a>
@@ -430,7 +421,7 @@
                 <a class="nav__link-footer" href="index.html#reviews">Отзывы</a>
               </li>
               <li class="nav__item-footer">
-                <a class="nav__link-footer" href="pageContacts.html#contacts">Контакты</a>
+                <a class="nav__link-footer" href="pageContacts.html">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -438,7 +429,7 @@
         </div>
       </div>
     </div>
-</footer>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
     <script src="appAboutUs.js"></script>
   </body>

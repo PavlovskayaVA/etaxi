@@ -14,7 +14,7 @@
 }
 
 .pageAbout {
-  color:  rgba(0, 0, 0, 0.85);
+  color: rgba(0, 0, 0, 0.85);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -22,7 +22,7 @@
   margin-left: 8px;
 }
 
-aboutUs {
+.aboutUs {
   padding: 80px 0;
 }
 
@@ -41,7 +41,6 @@ aboutUs {
   flex-direction: row;
   justify-content: space-between;
   object-fit: cover;
-  margin-bottom: 160px;
 }
 
 .main__video-slogan video {
@@ -56,10 +55,10 @@ aboutUs {
 .slogan__container-title {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: end;
 }
 
-.slogan__container-title img {
+.slogan__container img {
   width: 55px;
   height: 48px;
 }
@@ -67,11 +66,12 @@ aboutUs {
 .slogan__container-title h2 {
   font-family: "BlissPro", sans-serif;
   font-size: 44px;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 110%;
   text-align: right;
-  margin: 5px;
+  font-style: normal;
+  letter-spacing: 0.3px;
+  margin-right: 0;
 }
 
 .slogan__container-text {
@@ -114,7 +114,7 @@ aboutUs {
 }
 
 .slogan__container-text h3 {
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -123,7 +123,7 @@ aboutUs {
 }
 
 .slogan__container-text p {
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -144,7 +144,7 @@ aboutUs {
 }
 
 .ourTeam__title {
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -174,7 +174,7 @@ aboutUs {
 }
 
 .footer-phone {
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -197,7 +197,7 @@ aboutUs {
 .copyright,
 .privacy-policy {
   color: #aaa;
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -345,7 +345,7 @@ aboutUs {
 }
 
 .card__container h2 {
-  font-family: "BlissPro", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -374,7 +374,7 @@ aboutUs {
 }
 
 .work-algorithm-inner__title {
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -388,7 +388,7 @@ aboutUs {
 .faq {
   width: 320px;
   height: 32px;
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -472,7 +472,7 @@ aboutUs {
 }
 
 .question-inner__title {
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -484,7 +484,7 @@ aboutUs {
 .question-inner__text {
   width: 487px;
   height: 59px;
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   color: var(--Primary, #fdb913);
   font-size: 20px;
   font-style: normal;
@@ -531,7 +531,7 @@ aboutUs {
   border: 1px solid #cbccce;
   background: #fff;
 
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
 
   font-size: 16px;
   font-style: normal;
@@ -573,7 +573,7 @@ aboutUs {
   border-radius: 12px;
   background: #fdb913;
 
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   text-align: center;
 
   font-size: 18px;
@@ -613,7 +613,7 @@ aboutUs {
 .question-checkbox-text {
   width: 450px;
   height: 32px;
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -637,7 +637,7 @@ aboutUs {
   font-size: 1rem;
   color: #444;
   cursor: pointer;
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
