@@ -23,7 +23,7 @@ body {
     padding: 0px 10px;
 }
 
-
+/*
 @media (max-width: 768px)  {
     .container {
         max-width: 700px;
@@ -38,7 +38,7 @@ body {
     }
 }
 
-
+*/
 button {
     cursor: pointer;
     border: none;
@@ -220,7 +220,7 @@ img {
     width: 180px;
     height: 44px;
 }
-
+/*
 @media (max-width: 768px)  {
     .header-top {
         position: relative;
@@ -357,7 +357,7 @@ img {
         height: 44px;
     }
 }
-
+*/
 
 /*Main*/
 .main-block {
@@ -496,12 +496,13 @@ img {
     margin-bottom: 4px;
 }
 
+/*
 @media (max-width: 360px)  {
     .main-right, .main-left {
         margin-top: 0;
     }
 }
-
+*/
 /*Advantages*/
 
 .advantages {
