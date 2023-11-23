@@ -249,8 +249,15 @@ function closePopUp() {
   popUp.style.display = "none";
   header.style.backgroundColor =  '#FFF';
   body.style.backgroundColor =  '#FFF';
-  headerCity.innerHTML = popUpCity.value;
-  yourCity.innerHTML = popUpCity.value;
+
+  if (popUpCity.value === '') {
+    popUpCity.value = 'Иркутск';
+    yourCity.innerHTML = popUpCity.value;
+    headerCity.innerHTML = popUpCity.value;
+  } else {
+    yourCity.innerHTML = popUpCity.value;
+    headerCity.innerHTML = popUpCity.value;
+  }
 }
 
 /*Извлечение города в popUp*/

@@ -116,7 +116,6 @@ const trueButton = document.querySelector(".actual-city__button--yellow");
 const falseButton = document.querySelector(".actual-city__button--white");
 const yourCity = document.querySelector(".your-city");
 
-
 showExpand.addEventListener("click",showSlectCity)
 showCity.addEventListener("click",showSlectCity)
 
@@ -135,7 +134,6 @@ function closeSlectCity() {
 /*Показать/скрыть popUp*/
 function showPopUp() {
   body.style.overflow =  'hidden';
-  body.style.backgroundColor = 'red';
   popUp.style.display = "block";
   header.style.backgroundColor = 'rgb(245,245,245)';
   body.style.backgroundColor =  'rgba(0, 0, 0, 0.05)';
@@ -150,8 +148,15 @@ function closePopUp() {
   popUp.style.display = "none";
   header.style.backgroundColor =  '#FFF';
   body.style.backgroundColor =  '#FFF';
-  headerCity.innerHTML = popUpCity.value;
-  yourCity.innerHTML = popUpCity.value;
+
+  if (popUpCity.value === '') {
+    popUpCity.value = 'Иркутск';
+    yourCity.innerHTML = popUpCity.value;
+    headerCity.innerHTML = popUpCity.value;
+  } else {
+    yourCity.innerHTML = popUpCity.value;
+    headerCity.innerHTML = popUpCity.value;
+  }
 }
 
 /*Извлечение города в popUp*/

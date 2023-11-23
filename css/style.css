@@ -496,6 +496,12 @@ img {
     margin-bottom: 4px;
 }
 
+@media (max-width: 360px)  {
+    .main-right, .main-left {
+        margin-top: 0;
+    }
+}
+
 /*Advantages*/
 
 .advantages {
