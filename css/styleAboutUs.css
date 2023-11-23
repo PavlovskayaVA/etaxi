@@ -1,11 +1,12 @@
 .return {
   position: relative;
   z-index: 1;
+  margin-top: 40px;
 }
 
 .returnToMainPage {
   color: rgba(0, 0, 0, 0.45);
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
@@ -14,16 +15,16 @@
 }
 
 .pageAbout {
-  color:  rgba(0, 0, 0, 0.85);
-  font-size: 14px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
   margin-left: 8px;
 }
 
-aboutUs {
-  padding: 80px 0;
+.aboutUs {
+  padding: 38px 0 80px;
 }
 
 .main__title {
@@ -33,7 +34,7 @@ aboutUs {
   font-style: normal;
   font-weight: 700;
   line-height: 48px;
-  margin-bottom: 24px;
+  margin-bottom: 4px;
 }
 
 .main__video-slogan {
@@ -41,7 +42,6 @@ aboutUs {
   flex-direction: row;
   justify-content: space-between;
   object-fit: cover;
-  margin-bottom: 160px;
 }
 
 .main__video-slogan video {
@@ -56,10 +56,10 @@ aboutUs {
 .slogan__container-title {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: end;
 }
 
-.slogan__container-title img {
+.slogan__container img {
   width: 55px;
   height: 48px;
 }
@@ -67,11 +67,13 @@ aboutUs {
 .slogan__container-title h2 {
   font-family: "BlissPro", sans-serif;
   font-size: 44px;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 110%;
   text-align: right;
-  margin: 5px;
+  font-style: normal;
+  letter-spacing: 0.3px;
+  margin-right: 0;
+  margin-top: 48px;
 }
 
 .slogan__container-text {
@@ -93,6 +95,7 @@ aboutUs {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
+  margin-left: 58px;
 }
 
 .slogan__container-text img {
@@ -329,7 +332,7 @@ aboutUs {
 .card__container {
   width: 383px;
   height: 730px;
-  border: 2px solid #aaa;
+  border: 1px solid #CBCCCE;
   margin-right: 15px;
   border-radius: 20px;
   display: flex;
@@ -338,7 +341,7 @@ aboutUs {
 }
 
 .card__img {
-  width: 380px;
+  max-width: 384px;
   height: 420px;
   border-radius: 20px;
   background: #d6cece;
@@ -348,20 +351,22 @@ aboutUs {
   font-family: "BlissPro", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 28px;
   text-align: start;
   margin: 30px 0 20px 30px;
+  color: #000;
 }
 
 .card__container p {
   font-family: "BlissPro", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 24px;
   text-align: start;
   margin: 0 0 28px 30px;
+  color: #000;
 }
 
 .card__img-text {
@@ -393,7 +398,8 @@ aboutUs {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  margin: 0 auto 40px;
+  margin: 0 auto 25px;
+  text-align: center;
 }
 
 .faq-list {
@@ -402,8 +408,8 @@ aboutUs {
 }
 
 .faq-item {
-  border-radius: 10px;
-  border: 1px solid #b3b3b3;
+  border-radius: 12px;
+  border: 1px solid #CBCCCE;
   background: #fff;
   margin-bottom: 20px;
 }
@@ -415,10 +421,10 @@ aboutUs {
   padding-top: 28px;
   padding-bottom: 28px;
   padding-left: 56px;
-  font-family: "Inter", sans-serif;
+  font-family: "BlissPro", sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 28px;
   display: flex;
   justify-content: space-between;
@@ -462,6 +468,7 @@ aboutUs {
   /* padding-top: 15px; */
   padding-bottom: 26px;
   padding-left: 57px;
+  color: #5E5E5E;
 }
 
 .question {
@@ -472,7 +479,7 @@ aboutUs {
 }
 
 .question-inner__title {
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -484,7 +491,7 @@ aboutUs {
 .question-inner__text {
   width: 487px;
   height: 59px;
-  font-family: "BlissPro", sans-serif;
+  font-family: "Bliss Pro", sans-serif;
   color: var(--Primary, #fdb913);
   font-size: 20px;
   font-style: normal;
@@ -551,7 +558,7 @@ aboutUs {
   border: 1px solid #cbccce;
   background: #fff;
 
-  font-family: "Bliss Pro", sans-serif;
+  font-family: "BlissPro", sans-serif;
 
   font-size: 16px;
   font-style: normal;

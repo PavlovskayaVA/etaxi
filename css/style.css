@@ -23,6 +23,22 @@ body {
     padding: 0px 10px;
 }
 
+
+@media (max-width: 768px)  {
+    .container {
+        max-width: 700px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 360px)  {
+    .container {
+        max-width: 320px;
+        padding: 0;
+    }
+}
+
+
 button {
     cursor: pointer;
     border: none;
@@ -83,7 +99,6 @@ img {
     background-color: #FFF;
     z-index: 4;
     border-bottom: 1px solid #CBCCCE;
-    margin-bottom: 40px;
 }
 
 #catalog:before, #rent:before, #reviews:before, #contacts::before {
@@ -130,7 +145,7 @@ img {
 .header-city {
     padding: 0 8px 0 4px;
     color: #222;
-    font-family: BlissPro;
+    font-family: 'BlissPro';
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -157,6 +172,10 @@ img {
     font-family: inherit;
     font-size: 18px;
     font-weight: 500;
+}
+
+.menu-burger, .burger-open, .burger-close, .menu-burger__list {
+    display: none;
 }
 
 .header-bottom {
@@ -201,6 +220,144 @@ img {
     width: 180px;
     height: 44px;
 }
+
+@media (max-width: 768px)  {
+    .header-top {
+        position: relative;
+        justify-content: flex-start;
+        padding-top: 10px;
+        max-width: 579px;
+    }
+
+    .header-logo {
+        margin-right: 47px;
+    }
+
+    .operating-mode, .header-mode {
+        display: none;
+    }
+
+    .header-geo, .header-call {
+        margin-right: 4px;
+    }
+
+    .header-call {
+        margin-left: auto;
+    }
+
+    .header-number {
+        margin-right: 200px;
+    }
+    
+    .header-nav__button {
+        position: absolute;
+        top: 24px;
+        right: 34px;
+    }
+
+    .header-bottom {
+        justify-content: flex-end;
+    }
+
+    .header-nav__item {
+        padding: 10px;
+        margin-right: 0px;
+        margin-left: 8px;
+    }
+
+    .header-nav__item:last-child {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 360px)  {
+    .header-logo {
+        width: 40px;
+        height: 50px;
+        margin-right: 13px;
+    }
+
+    .header-call, .header-number, .header-bottom, .header-nav__button {
+        display: none;
+    }
+
+    .header-top {
+        padding-top: 0;
+    }
+
+    .menu-burger {
+        display: block;
+        margin-left: auto;
+    }
+
+    .burger-open {
+        width: 40px;
+        height: 40px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger-close {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .menu-burger__list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 68px;
+        background-color: #FFF;
+    }
+
+    .menu-burger__items {
+        display: none;
+        margin-bottom: 80px;
+    }
+
+    .header-nav__item {
+        margin-left: 0;
+        margin-bottom: 16px;
+    }
+
+    .menu-burger__number {
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    .call-burger {
+        display: none;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+
+    .number-burger {
+        display: none;
+        color: #222;
+        font-family: inherit;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .header-nav__button {
+        display: none;
+        position: static;
+    }
+
+    #header-section {
+        border-bottom: none;
+    }
+
+    .burger-nav__button {
+        align-items: flex-start;
+        width: 180px;
+        height: 44px;
+    }
+}
+
 
 /*Main*/
 .main-block {
@@ -407,6 +564,12 @@ img {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+}
+
+@media (max-width: 1250px)  {
+    .catalog-inner {
+        justify-content: center;
+    }
 }
 
 .catalog__item {

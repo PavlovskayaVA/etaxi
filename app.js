@@ -33,12 +33,19 @@ const popUp = document.querySelector(".popUp");
 const body = document.querySelector("body");
 const showButtonHeader = document.querySelector(".header-nav__button");
 const showButtonMain = document.querySelector(".main__button");
+const showButtonBurger = document.querySelector('.burger-nav__button');
 const applicationForm = document.querySelector(".application-form")
 const closeButton = document.querySelector(".application-close");
 const header = document.querySelector("#header-section");
 
+showButtonBurger.addEventListener("click", showFormBurger)
 showButtonHeader.addEventListener("click", showForm)
 showButtonMain.addEventListener("click", showForm)
+
+
+function showFormBurger() {
+  closeBurgerMenu();
+}
 
 function showForm() {
   body.style.overflow =  'hidden'; // заперт фоновой прокрутки
@@ -189,6 +196,65 @@ let width = carousel.offsetWidth;
 window.addEventListener("resize", e => (width = carousel.offsetWidth));
 
 
+/*burger-menu*/
+const headerLogo = document.querySelector('.header-logo');
+const headerGeo = document.querySelector('.header-geo');
+const mainSection = document.querySelector('#main-section');
+const footer = document.querySelector('.footer');
 
 
+const burgerOpen = document.querySelector('.burger-open');
+const burgerClose = document.querySelector('.burger-close');
 
+const burgerList= document.querySelector('.menu-burger__list');
+const burgerItems= document.querySelector('.menu-burger__items');
+const callBurger= document.querySelector('.call-burger');
+const numberBurger= document.querySelector('.number-burger');
+//showButtonHeader;
+
+
+burgerOpen.addEventListener("click",openBurgerMenu)
+
+function openBurgerMenu() {
+  burgerOpen.style.display = 'none';
+  burgerClose.style.display = 'block';
+  
+  burgerList.style.display = 'block';
+
+  showButtonBurger.style.display = 'block';
+  burgerItems.style.display = 'block';
+  callBurger.style.display = 'block';
+  numberBurger.style.display = 'block';
+  //showButtonHeader.style.display = 'block';
+
+
+  headerLogo.style.display = 'none';
+  burgerOpen.style.display = 'none';
+  headerGeo.style.display = 'none';
+  showCity.style.display = 'none';
+  showExpand.style.display = 'none';
+  mainSection.style.display = 'none';
+  footer.style.display = 'none';
+
+}
+
+burgerClose.addEventListener("click",closeBurgerMenu)
+
+function closeBurgerMenu() {
+  burgerOpen.style.display = 'block';
+  burgerClose.style.display = 'none';
+
+  showButtonBurger.style.display = 'none';
+  burgerItems.style.display = 'none';
+  callBurger.style.display = 'none';
+  numberBurger.style.display = 'none';
+  //showButtonHeader.style.display = 'none';
+
+  headerLogo.style.display = 'block';
+  burgerOpen.style.display = 'block';
+  headerGeo.style.display = 'block';
+  showCity.style.display = 'block';
+  showExpand.style.display = 'block';
+  mainSection.style.display = 'block';
+  footer.style.display = 'block';
+}
