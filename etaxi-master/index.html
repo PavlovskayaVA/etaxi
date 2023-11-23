@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etaxi</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header-section">
+        <div class="container">
+            <div class="actual-city">
+                <div class="actual-city-top">
+                    <figure class="city-img-actual">
+                        <img src="img/location_city.svg" alt="location icon">
+                    </figure>
+                    <h4 class="city-text">Ваш город <span class="your-city">Иркутск</span>?</h4>
+                </div>
+                <div class="actual-city-bottom">
+                    <button class="button actual-city__button actual-city__button--yellow">Всё верно</button>
+                    <button class="actual-city__button actual-city__button--white">Выбрать город</button>
+                </div>
+            </div>
+            <div class="header">
+                <div class="header-logo">
+                    <a href="index.html"><img class="header-logo__img" src="img/logo.svg" alt="etaxi logo"></a>
+                </div>
+                <div class="header-description">
+                    <div class="header-top">
+                        <figure class="header-geo">
+                            <img src="img/location-header.svg" alt="location">
+                        </figure>
+                        <span class="header-city">Иркутск</span>
+                        <figure class="header-expandMore">
+                            <img src="img/expand_more.svg" alt="expand_more">
+                        </figure>
+                        <figure class="header-mode">
+                            <img src="img/clock-header.svg" alt="clock">
+                        </figure>
+                        <span class="operating-mode">пн-пт 9:00–18:00, сб 10:00–14:00</span>
+                        <figure class="header-call">
+                            <img src="img/call-header.svg" alt="call">
+                        </figure>
+                        <a class="header-number" href="tel:+73822984033">+7 (382) 298-40-33</a>
+                    </div>       
+                    <div class="header-bottom">
+                        <nav class="header-nav">
+                            <ul class="header-nav-list">
+                                <li class="header-nav__item"><a class="header-nav__link" href="index.html#catalog">Каталог</a></li>
+                                <li class="header-nav__item"><a class="header-nav__link" href="pageAboutUs.html">О нас</a></li>
+                                <li class="header-nav__item"><a class="header-nav__link" href="index.html#rent">Условия аренды</a></li>
+                                <li class="header-nav__item"><a class="header-nav__link" href="index.html#reviews">Отзывы</a></li>
+                                <li class="header-nav__item"><a class="header-nav__link" href="#contacts">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <button class="button header-nav__button">Оставить заявку</button>
+                    </div>   
+                </div>
+            </div>
+         </div>   
+    </header>
+    <main id="main-section">
+        <form class="application-form" action="index.html" method="post">
+            <figure class="application-close">
+                <img src="img/close-form.svg">
+            </figure>
+            <h2 class="application-subtitle">Оставьте заявку</h2>
+            <h3 class="application-text">Первый день аренды авто бесплатно!</h3>
+            <input class="application-input" type="text" name="name" placeholder="Ваше имя" required></input>
+            <input class="application-input" type="tel" name="tel" placeholder="+7 (999) 999-99-99" required></input>
+            <div class="dropDown-main">
+                <div class="dropDown-main-selectCity">
+                  <input class="dropDown-main-city" placeholder="Выберите город"></input>
+                  <figure class="dropDown-main-img-down">
+                    <img src="img/dropDown_Down.svg" alt="expand more">
+                  </figure>
+                  <figure class="dropDown-main-img-up">
+                    <img src="img/dropDown_Up.svg" alt="expand more">
+                  </figure>
+                </div>
+                <div class="dropDown-main-list">
+                        <div class="dropDown-main__item">Иркутск</div>
+                        <div class="dropDown-main__item">Барнаул</div>
+                        <div class="dropDown-main__item">Екатеринбург</div>
+                        <div class="dropDown-main__item">Кемерово</div>
+                        <div class="dropDown-main__item">Красноярск</div>
+                        <div class="dropDown-main__item">Новосибирск</div>
+                        <div class="dropDown-main__item">Новокузнецк</div>
+                        <div class="dropDown-main__item">Омск</div>
+                        <div class="dropDown-main__item">Томск</div>
+                        <div class="dropDown-main__item">Тюмень</div>
+                        <div class="dropDown-main__item">Улан-Удэ</div>
+                </div>
+            </div>
+            <button class="button application-button">Оставить заявку</button>
+            <div class="application-checkbox">
+                <input class="custom-checkbox" type="checkbox" id="confirmation" name="confirmation"/>
+                <label class="application-checkbox" for="confirmation">Подтверждаю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</label>
+            </div>
+        </form>
+        <div class="popUp">
+            <figure class="application-close popUp-close">
+                <img src="img/close-form.svg">
+            </figure>
+            <h4 class="popUp-title">Выберите город</h4>
+            <div class="popUp-search-city">
+                <input class="popUp-city" placeholder="Ваш город"></input>
+                <figure class="popUp-img-city">
+                    <img src="img/search.svg" alt="search">
+                </figure>
+                <div class="popUp-list">
+                    <div class="popUp__item">Иркутск</div>
+                    <div class="popUp__item">Барнаул</div>
+                    <div class="popUp__item">Екатеринбург</div>
+                    <div class="popUp__item">Кемерово</div>
+                    <div class="popUp__item">Красноярск</div>
+                    <div class="popUp__item">Новосибирск</div>
+                    <div class="popUp__item">Новокузнецк</div>
+                    <div class="popUp__item">Омск</div>
+                    <div class="popUp__item">Томск</div>
+                    <div class="popUp__item">Тюмень</div>
+                    <div class="popUp__item">Улан-Удэ</div>
+                </div>
+            </div>
+        </div>
+        <div class="main-block">
+        <img class="background-left" src="img/background-left.png" alt="background-left">
+        <img class="background-right" src="img/background-right.png" alt="background-right">
+            <div class="container">
+                <section class="main">
+                    <div class="main-left">
+                        <figure class="main-img">
+                            <img src="img/background-car.svg" alt="background-car">
+                        </figure>
+                        <h4 class="main-text text">Официальный партнер Яндекс Такси</h4>
+                    </div>
+                    <div class="main-right">
+                        <h2 class="main-title title">Зарабатывайте <br> <span class="title--yellow"> от 3000 Р/день</span> на руки <br> в нашем таксопарке</h2>
+                        <div class="main-button__items">
+                            <button class="button main__button">Оставить заявку</button>
+                            <div class="main-description">
+                                <h3 class="main-subtitle">всё быстро и просто</h3>
+                                <h4 class="description-text">Оставьте заявку и уже сегодня <br> вы сможете зарабатывать </h4>
+                            </div>
+                        </div>
+                        <div class="main-tegs">
+                            <div class="main-tegs__item">
+                                <h2 class="tegs-title title">54</h2>
+                                <h4 class="tegs-text">таксопарка</h4>
+                            </div>
+                            <div class="main-tegs__item">
+                                <h2 class="tegs-title title">4000 +</h2>
+                                <h4 class="tegs-text">клиентов</h4>
+                            </div>
+                            <div class="main-tegs__item">
+                                <h2 class="tegs-title title">11</h2>
+                                <h4 class="tegs-text">городов</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>         
+        </div>
+        <div class="container">
+            <section class="advantages">
+                <h2 class="advantages-title title">Наши преимущества</h2>
+                <div class="advantages-inner">
+                    <div class="advantages__item">
+                        <figure class="advantages-img">
+                            <img src="img/free_first_day.svg" alt="Free first day">
+                        </figure>
+                        <h3 class="advantages-subtitle subtitle">Первый день работы бесплатно</h3>
+                        <p class="advantages-text text">Попробуйте, освойтесь и поймите, <br> что вам удобно</p>
+                    </div>
+                    <div class="advantages__item">
+                        <figure class="advantages-img">
+                            <img src="img/license.svg" alt="License">
+                        </figure>
+                        <h3 class="advantages-subtitle subtitle">Лицензия на осуществление деятельности такси</h3>
+                        <p class="advantages-text text"></p>
+                    </div>
+                    <div class="advantages__item">
+                        <figure class="advantages-img">
+                            <img src="img/education.svg" alt="Education">
+                        </figure>
+                        <h3 class="advantages-subtitle subtitle">Профессиональное обучение</h3>
+                        <p class="advantages-text text">4-дневное сопровождение от успешного водителя таксопарка</p>
+                    </div>
+                    <div class="advantages__item">
+                        <figure class="advantages-img">
+                            <img src="img/support.svg" alt="Support">
+                        </figure>
+                        <h3 class="advantages-subtitle subtitle">Помощь менеджеров 24/7</h3>
+                        <p class="advantages-text text">В сложной или непонятной ситуации <br> менеджеры помогут, расскажут, объяснят</p>
+                    </div>
+                    <div class="advantages__item">
+                        <figure class="advantages-img">
+                            <img src="img/petrol.svg" alt="Petrol">
+                        </figure>
+                        <h3 class="advantages-subtitle subtitle">Экономия на топливе</h3>
+                        <p class="advantages-text text">Все наши авто на газу, а газ экономичнее <br> бензина на 700 ₽ за смену</p>
+                    </div>
+                    <div class="advantages__item">
+                        <figure class="advantages-img">
+                            <img src="img/accident.svg" alt="accident">
+                        </figure>
+                        <h3 class="advantages-subtitle subtitle">Франшиза при ДТП</h3>
+                        <p class="advantages-text text">Вы не платите даже если ДТП по вашей вине</p>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog" id="catalog">
+                <h2 class="catalog-title title">Автомобили нашего таксопарка</h2>
+                <h4 class="catalog-age">Все авто не старше 2-х лет</h4>
+                <div class="catalog-inner">
+                    <div class="catalog__item">
+                        <figure class="catalog-img">
+                            <img src="img/Cars_models_1.png" alt="Volkswagen Polo">
+                        </figure>
+                        <h3 class="catalog-subtitle subtitle">Volkswagen Polo</h3>
+                        <ul class="catalog-text text">
+                            <li>Год выпуска: 2022 г.</li>
+                            <li>АКПП</li>
+                            <li>Объем двигателя 1.6 л</li>
+                            <li>Авто на газу — экономия 200 р/ 100 км в сравнении с бензином</li>
+                        </ul>
+                        <button class="button catalog__button">Арендовать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <figure class="catalog-img">
+                            <img src="img/Cars_models_2.png" alt="Volkswagen Taos">
+                        </figure>
+                        <h3 class="catalog-subtitle subtitle">Volkswagen Taos</h3>
+                        <ul class="catalog-text text">
+                            <li>Год выпуска: 2020 г.</li>
+                            <li>МКПП</li>
+                            <li>Объем двигателя 1.6 л</li>
+                            <li>Авто на газу — экономия 200 р/ 100 км в сравнении с бензином</li>
+                        </ul>
+                        <button class="button catalog__button">Арендовать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <figure class="catalog-img">
+                            <img src="img/Cars_models_3.png" alt="Volkswagen Polo">
+                        </figure>
+                        <h3 class="catalog-subtitle subtitle">Volkswagen Polo</h3>
+                        <ul class="catalog-text text">
+                            <li>Год выпуска: 2020 г.</li>
+                            <li>АКПП</li>
+                            <li>Объем двигателя 1.6 л</li>
+                            <li>Авто на газу — экономия 250 р/ 100 км в сравнении с бензином</li>
+                        </ul>
+                        <button class="button catalog__button">Арендовать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <figure class="catalog-img">
+                            <img src="img/Cars_models_4.png" alt="Faw Bestune B70">
+                        </figure>
+                        <h3 class="catalog-subtitle subtitle">Faw Bestune B70</h3>
+                        <ul class="catalog-text text">
+                            <li>Год выпуска: 2023 г.</li>
+                            <li>АКПП</li>
+                            <li>Объем двигателя 1.5 л</li>
+                            <li>Авто на газу — экономия 200 р/ 100 км в сравнении с бензином</li>
+                        </ul>
+                        <button class="button catalog__button">Арендовать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <figure class="catalog-img">
+                            <img src="img/Cars_models_5.png" alt="Skoda Octavia">
+                        </figure>
+                        <h3 class="catalog-subtitle subtitle">Skoda Octavia</h3>
+                        <ul class="catalog-text text">
+                            <li>Год выпуска: 2020 г.</li>
+                            <li>МКПП</li>
+                            <li>Объем двигателя 1.6 л</li>
+                            <li>Авто на газу — экономия 200 р/ 100 км в сравнении с бензином</li>
+                        </ul>
+                        <button class="button catalog__button">Арендовать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <figure class="catalog-img">
+                            <img src="img/Cars_models_6.png" alt="Chevrolet Cobalt">
+                        </figure>
+                        <h3 class="catalog-subtitle subtitle">Chevrolet Cobalt</h3>
+                        <ul class="catalog-text text">
+                            <li>Год выпуска: 2022 г.</li>
+                            <li>АКПП</li>
+                            <li>Объем двигателя 1.5 л</li>
+                            <li>Авто на газу — экономия 200 р/ 100 км в сравнении с бензином</li>
+                        </ul>
+                        <button class="button catalog__button">Арендовать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <figure class="catalog-img">
+                            <img src="img/Cars_models_7.png" alt="Volkswagen Bora">
+                        </figure>
+                        <h3 class="catalog-subtitle subtitle">Volkswagen Bora</h3>
+                        <ul class="catalog-text text">
+                            <li>Год выпуска: 2022 г.</li>
+                            <li>АКПП</li>
+                            <li>Объем двигателя 1.6 л</li>
+                            <li>Авто на газу — экономия 200 р/ 100 км в сравнении с бензином</li>
+                        </ul>
+                        <button class="button catalog__button">Арендовать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <figure class="catalog-img">
+                            <img src="img/Cars_models_8.png" alt="Jac J7">
+                        </figure>
+                        <h3 class="catalog-subtitle subtitle">Jac J7</h3>
+                        <ul class="catalog-text text">
+                            <li>Год выпуска: 2022 г.</li>
+                            <li>АКПП</li>
+                            <li>Объем двигателя 1.5 л</li>
+                            <li>Авто на газу — экономия 250 р/ 100 км в сравнении с бензином</li>
+                        </ul>
+                        <button class="button catalog__button">Арендовать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <figure class="catalog-img">
+                            <img src="img/Cars_models_9.png" alt="Jetta VA3">
+                        </figure>
+                        <h3 class="catalog-subtitle subtitle">Jetta VA3</h3>
+                        <ul class="catalog-text text">
+                            <li>Год выпуска: 2022 г.</li>
+                            <li>АКПП</li>
+                            <li>Объем двигателя 1.5 л</li>
+                            <li>Авто на газу — экономия 200 р/ 100 км в сравнении с бензином</li>
+                        </ul>
+                        <button class="button catalog__button">Арендовать</button>
+                    </div>
+                </div>
+            </section>
+            <section class="rent" id="rent">
+                <h2 class="rent-title title">Условия аренды</h2>
+                <ul class="rent-list">
+                    <li class="rent__item">Водительские права категории "B"</li>
+                    <li class="rent__item">Стаж вождения не менее 3-х лет</li>
+                </ul>
+                <h2 class="stage-rent-title title">Этапы аренды автомобиля</h2>
+                <div class="stage-rent-inner">
+                    <div class="stage-rent__item">
+                        <div class="stage-rent-number">1</div>
+                        <div class="stage-rent-subtitle subtitle">Заявка на сайте</div>
+                        <p class="stage-rent-text text">Выберите желаемую модель автомобиля, заполните заявку <br> на сайте и отправьте её</p>
+                    </div>
+                    <div class="stage-rent__item">
+                        <div class="stage-rent-number">2</div>
+                        <div class="stage-rent-subtitle subtitle">Собеседование</div>
+                        <p class="stage-rent-text text">Вам перезвонит менеджер, ответит на все вопросы и пригласит на собеседование</p>
+                    </div>
+                    <div class="stage-rent__item">
+                        <div class="stage-rent-number">3</div>
+                        <div class="stage-rent-subtitle subtitle">Проверка</div>
+                        <p class="stage-rent-text text">Проверка службой безопасности по анкете, заполненной на собеседовании</p>
+                    </div>
+                    <div class="stage-rent__item">
+                        <div class="stage-rent-number">4</div>
+                        <div class="stage-rent-subtitle subtitle">Обучение</div>
+                        <p class="stage-rent-text text">Инструктаж и подписание договора на аренду машины под такси</p>
+                    </div>
+                    <div class="stage-rent__item">
+                        <div class="stage-rent-number">5</div>
+                        <div class="stage-rent-subtitle subtitle">Автомобиль</div>
+                        <p class="stage-rent-text text">Выдача автомобиля и начало работы в Яндекс Такси</p>
+                    </div>
+                </div>
+                <div class="stage-rent-connect">Уже через 1-2 часа после звонка вы получите автомобиль!</div>
+            </section>
+            <section class="reviews" id="reviews">
+                <h2 class="reviews-title title">Отзывы водителей о Ё-такси</h2>
+                <div class="gallery">
+                    <div class="gallery-container">
+                        <div class="gallery-item gallery-item-1" data-index="1">
+                            <video class="video-item video-item-1" max-width="588" max-height="330" controls="controls">
+                                <source src="video/review_01.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                             </video>
+                            <div class="reviews-text text">Сандара Аян, Томск</div>
+                        </div>
+                        <div class="gallery-item gallery-item-2" data-index="2">
+                            <video class="video-item video-item-2" max-width="588" max-height="330" controls="controls">
+                                <source src="video/review_02.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                             </video>
+                            <div class="reviews-text text">Александр Белоусов, Кемерово</div>
+                        </div>
+                        <div class="gallery-item gallery-item-3 gallery-item--active" data-index="3" >
+                            <video class="video-item video-item-3 active-video" max-width="588" max-height="330" controls="controls">
+                                <source src="video/review_03.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                             </video>
+                            <div class="reviews-text text">Максим Надыкта, Новокузнецк</div>
+                        </div>
+                        <div class="gallery-item gallery-item-4" data-index="4">
+                            <video class="video-item video-item-4" max-width="588" max-height="330" controls="controls">
+                                <source src="video/review_04.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                             </video>
+                            <div class="reviews-text text">Элвин Кахраман, Красноярск</div>
+                        </div>
+                        <div class="gallery-item gallery-item-5" data-index="5">
+                            <video class="video-item video-item-5" max-width="588" max-height="330" controls="controls">
+                                <source src="video/review_05.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                             </video>
+                            <div class="reviews-text text">Данил Шереметьев, Красноярск</div>
+                        </div>
+                    </div>
+                    <div class="gallery-controls"></div>
+                    <figure class="btn-play">
+                        <img src="img/btn-play.svg" alt="btn-play">
+                    </figure>
+                </div>
+                <div id="reviews-text__slider">
+                    <div id="carousel">
+                      <div id="review-text__slider-container">
+                        <div class="reviews-text__slide-item">
+                            <div class="reviews-text-user text">
+                                <p>
+                                Хочу поделиться своим положительным опытом работы в парке Ё-такси. Я уже несколько месяцев являюсь водителем этого парка и хотелось бы отметить его преимущества. <br>
+                                Преимуществом парка Ё-такси является гибкий график работы. Здесь можно выбрать один из нескольких вариантов графика: 6/1, 3/3 или 2/2. Это даёт возможность согласовать работу с личными…
+                                </p>
+                            </div>
+                            <div class="reviews-rating">
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                            </div>
+                            <div class="reviews-source">
+                                <div class="source-person"><span class="source-person__name">Максимка</span>,<span class="source-person__date">31.10.2023</span></div>
+                                <div class="sourse-review">FLAMP</div>
+                            </div>
+                        </div>
+                        <div class="reviews-text__slide-item">
+                            <div class="reviews-text-user text">
+                                <p>
+                                    Отличный парк, хорошие условия, здесь действительно можно заработать, мнеджеры всегда помогут и подскажут. А так же есть куратор новичков, который может направить в нужное русло так сказать😅 Машины в отличном состоянии, все от 2019 года
+                                </p>
+                            </div>
+                            <div class="reviews-rating">
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                            </div>
+                            <div class="reviews-source">
+                                <div class="source-person"><span class="source-person__name">Даша</span>,<span class="source-person__date">03.08.2023</span></div>
+                                <div class="sourse-review">Яндекс.Карты</div>
+                            </div>
+                        </div>
+                        <div class="reviews-text__slide-item">
+                            <div class="reviews-text-user text">
+                                <p>
+                                    Хочу поделиться своим положительным опытом работы в парке Ё-такси. Я уже несколько месяцев являюсь водителем этого парка и хотелось бы отметить его преимущества. <br>
+                                    Преимуществом парка Ё-такси является гибкий график работы. Здесь можно выбрать один из нескольких вариантов графика: 6/1, 3/3 или 2/2. Это даёт возможность согласовать работу с личными…
+                                </p>
+                            </div>
+                            <div class="reviews-rating">
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                            </div>
+                            <div class="reviews-source">
+                                <div class="source-person"><span class="source-person__name">Максимка</span>,<span class="source-person__date">31.10.2023</span></div>
+                                <div class="sourse-review">FLAMP</div>
+                            </div>
+                        </div>
+                        <div class="reviews-text__slide-item">
+                            <div class="reviews-text-user text">
+                                <p>
+                                    Отличный парк, хорошие условия, здесь действительно можно заработать, мнеджеры всегда помогут и подскажут. А так же есть куратор новичков, который может направить в нужное русло так сказать😅 Машины в отличном состоянии, все от 2019 года
+                                </p>
+                            </div>
+                            <div class="reviews-rating">
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                            </div>
+                            <div class="reviews-source">
+                                <div class="source-person"><span class="source-person__name">Даша</span>,<span class="source-person__date">03.08.2023</span></div>
+                                <div class="sourse-review">Яндекс.Карты</div>
+                            </div>
+                        </div>
+                        <div class="reviews-text__slide-item">
+                            <div class="reviews-text-user text">
+                                <p>
+                                    Хочу поделиться своим положительным опытом работы в парке Ё-такси. Я уже несколько месяцев являюсь водителем этого парка и хотелось бы отметить его преимущества. <br>
+                                    Преимуществом парка Ё-такси является гибкий график работы. Здесь можно выбрать один из нескольких вариантов графика: 6/1, 3/3 или 2/2. Это даёт возможность согласовать работу с личными…
+                                </p>
+                            </div>
+                            <div class="reviews-rating">
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                            </div>
+                            <div class="reviews-source">
+                                <div class="source-person"><span class="source-person__name">Максимка</span>,<span class="source-person__date">31.10.2023</span></div>
+                                <div class="sourse-review">FLAMP</div>
+                            </div>
+                        </div>
+                        <div class="reviews-text__slide-item">
+                            <div class="reviews-text-user text">
+                                <p>
+                                    Отличный парк, хорошие условия, здесь действительно можно заработать, мнеджеры всегда помогут и подскажут. А так же есть куратор новичков, который может направить в нужное русло так сказать😅 Машины в отличном состоянии, все от 2019 года
+                                </p>
+                            </div>
+                            <div class="reviews-rating">
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                                <figure class="rating-container">
+                                    <img src="img/Star.svg" alt="rating-star" class="rating-star">
+                                </figure>
+                            </div>
+                            <div class="reviews-source">
+                                <div class="source-person"><span class="source-person__name">Даша</span>,<span class="source-person__date">03.08.2023</span></div>
+                                <div class="sourse-review">Яндекс.Карты</div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="reviews-slider-button">
+                        <button id="prev-button"></button>
+                        <button id="next-button"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="offers">
+                <figure class="offer-img">
+                    <img src="img/banner_offer.png" alt="banner offer">
+                </figure>
+                <div class="offer-item">
+                    <h2 class="offer-title title">Первый день аренды</h2>
+                    <h2 class="offer-title offer-title-free title">Бесплатно*</h2>
+                    <form class="offer-form" action="#" method="POST">
+                        <input class="offer-form__name" type="text" name="name" value="" placeholder="Ваше имя" required>
+                        <input class="offer-form__number"  type="text" name="number" value="" placeholder="+7 (999) 999-99-99" required>
+                        <button class="button offer__button">Арендовать машину</button>
+                        <div class="offer-form__checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="verification" name="verification"/>
+                            <label for="verification">Подтверждаю согласие на обработку персональных данных<br> и соглашаюсь с политикой конфиденциальности</label>
+                        </div>
+                    </form>
+                    <h3 class="offer-text">* В отдельных случаях компания оставляет за собой право не применять настоящее условие. Подробности уточняйте у сотрудников компании.</h3>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <div class="contacts__inner">
+                    <div class="contacts__address">
+                        <p class="contacts__address-title">Контакты</p>
+                        <div class="contacts__address-total">
+                          <div class="contacts__address-location">
+                            <img src="img/location_contact.svg" alt="location" />
+                            <p class="contacts__address-text">
+                              г. Иркутск, Старо-Кузьмихинская 71/1
+                            </p>
+                          </div>
+                          <div class="contacts__address-works">
+                            <img src="img/clock.svg" alt="clock" />
+                            <p class="contacts__address-text">
+                              Пн-Пт с 9:00 до 18:00 <br />
+                              Сб с 10:00 до 14:00
+                            </p>
+                          </div>
+                          <div class="contacts__address-phone">
+                            <img src="img/call.svg" alt="phone">
+                            <p class="contacts__address-text">
+                                +7 (3952) 50-37-75
+                              </p>
+                          </div>
+                        </div>
+                        <a class="button contacts__button" href="pageContacts.html">Все филиалы</a>
+                      </div>
+                    <div class="map">
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A4b8508d7139b2b61ed46cca9745440083eb5f0d9aa895c218d5b868aa1f1984a&amp;source=constructor"
+                            width="690"
+                            height="440"
+                            frameborder="0">
+                        </iframe>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-inner">
+            <div class="footer-up">
+              <div class="footer-logo">
+                <a href="index.html"><img class="footer-logo__img" src="img/logo.svg" alt="etaxi logo"></a>
+              </div>
+              <div class="footer-phone-social">
+                <a class="footer-phone" href="tel:+73822984033">+7 (382) 298-40-33</a>
+                <div class="footer-social">
+                  <a href="https://web.telegram.org/a/#970433058" target="_blank">
+                    <img src="img/Telegram.svg" alt="Telegram">
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCGadPlvl5Eq5b1NHnGs5m0w" target="_blank">
+                    <img src="img/Youtube.svg" alt="Youtube">
+                  </a>
+                  <a href="https://vk.com/etaxidriver" target="_blank">
+                    <img src="img/Vk.svg" alt="Vk">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="footer__down">
+              <div class="copyright">&#9400 2023 Все права защищены</div>
+              <nav class="nav-footer">
+                <ul class="nav-list">
+                  <li class="nav__item-footer">
+                    <a class="nav__link-footer" href="#catalog">Каталог</a>
+                  </li>
+                  <li class="nav__item-footer">
+                    <a class="nav__link-footer" href="pageAboutUs.html#about">О нас</a>
+                  </li>
+                  <li class="nav__item-footer">
+                    <a class="nav__link-footer" href="#rent">Условия аренды</a>
+                  </li>
+                  <li class="nav__item-footer">
+                    <a class="nav__link-footer" href="#reviews">Отзывы</a>
+                  </li>
+                  <li class="nav__item-footer">
+                    <a class="nav__link-footer" href="#contacts">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="privacy-policy">Политика конфиденциальности</div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="videoSlider.js"></script>
+</body>
+</html>
