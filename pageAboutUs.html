@@ -11,10 +11,48 @@
   <body>
     <header id="header-section">
       <div class="container">
+        <form class="application-formBurger" action="index.html" method="post">
+          <figure class="application-closeBurger">
+              <img src="img/menu-burgerClose.svg">
+          </figure>
+          <h2 class="application-subtitleBurger">Оставьте заявку</h2>
+          <h3 class="application-textBurger">Первый день аренды авто бесплатно!</h3>
+          <input class="application-inputBurger" type="text" name="name" placeholder="Ваше имя" required></input>
+          <input class="application-inputBurger" type="tel" name="tel" placeholder="+7 (999) 999-99-99" required></input>
+          <div class="dropDown-mainBurger">
+              <div class="dropDown-main-selectCityBurger">
+                <input class="dropDown-main-cityBurger" placeholder="Выберите город"></input>
+                <figure class="dropDown-main-img-downBurger">
+                  <img src="img/expand_more.svg" alt="expand more">
+                </figure>
+                <figure class="dropDown-main-img-upBurger">
+                  <img src="img/expand_more_up.svg" alt="expand more">
+                </figure>
+              </div>
+              <div class="dropDown-main-listBurger">
+                      <div class="dropDown-main__itemBurger">Иркутск</div>
+                      <div class="dropDown-main__itemBurger">Барнаул</div>
+                      <div class="dropDown-main__itemBurger">Екатеринбург</div>
+                      <div class="dropDown-main__itemBurger">Кемерово</div>
+                      <div class="dropDown-main__itemBurger">Красноярск</div>
+                      <div class="dropDown-main__itemBurger">Новосибирск</div>
+                      <div class="dropDown-main__itemBurger">Новокузнецк</div>
+                      <div class="dropDown-main__itemBurger">Омск</div>
+                      <div class="dropDown-main__itemBurger">Томск</div>
+                      <div class="dropDown-main__itemBurger">Тюмень</div>
+                      <div class="dropDown-main__itemBurger">Улан-Удэ</div>
+              </div>
+          </div>
+          <button class="application-button-burger">Оставить заявку</button>
+          <div class="application-checkboxBurger">
+            <input class="custom-checkboxBurger" type="checkbox" id="confirmationBurger" name="confirmationBurger"/>
+            <label class="application-checkboxBurger" for="confirmationBurger">Подтверждаю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</label>
+        </div>
+      </form>
           <div class="actual-city">
               <div class="actual-city-top">
                   <figure class="city-img-actual">
-                      <img src="img/location_city.svg" alt="location icon">
+                      <img src="img/location-header.svg" alt="location icon">
                   </figure>
                   <h4 class="city-text">Ваш город <span class="your-city">Иркутск</span>?</h4>
               </div>
@@ -49,18 +87,42 @@
                       <nav class="header-nav">
                           <ul class="header-nav-list">
                               <li class="header-nav__item"><a class="header-nav__link" href="index.html#catalog">Каталог</a></li>
-                              <li class="header-nav__item"><a class="header-nav__link" href="pageAboutUs.html">О нас</a></li>
                               <li class="header-nav__item"><a class="header-nav__link" href="index.html#rent">Условия аренды</a></li>
                               <li class="header-nav__item"><a class="header-nav__link" href="index.html#reviews">Отзывы</a></li>
                               <li class="header-nav__item"><a class="header-nav__link" href="pageContacts.html">Контакты</a></li>
+                              <li class="header-nav__item"><a class="header-nav__link" href="pageAboutUs.html">О нас</a></li>
                           </ul>
                       </nav>
                       <button class="button header-nav__button">Оставить заявку</button>
                   </div>   
               </div>
+              <div class="menu-burger">
+                <figure class="burger-open">
+                    <img src="img/menu-burgerOpen.svg" alt="menu">
+                </figure>
+                <figure class="burger-close">
+                    <img src="img/menu-burgerClose.svg" alt="menu">
+                </figure>
+                <div class="menu-burger__list">
+                    <ul class="menu-burger__items">
+                        <li class="header-nav__item"><a class="header-nav__link" href="index.html">Каталог</a></li> 
+                        <li class="header-nav__item"><a class="header-nav__link" href="index.html">Условия аренды</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="index.html">Отзывы</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="pageContacts.html">Контакты</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="pageAboutUs.html">О нас</a></li>
+                    </ul>
+                    <div class="menu-burger__number">
+                        <figure class="call-burger">
+                            <img src="img/call-header.svg" alt="call">
+                        </figure>
+                        <a class="number-burger" href="tel:+73822984033">+7 (382) 298-40-33</a>
+                    </div>
+                    <button class="button burger-nav__button">Оставить заявку</button>
+                </div>
+            </div>
           </div>
        </div>   
-    </header>
+  </header>
     <main id="main-section">
       <form class="application-form" action="index.html" method="post">
         <figure class="application-close">
@@ -74,10 +136,10 @@
             <div class="dropDown-main-selectCity">
               <input class="dropDown-main-city" placeholder="Выберите город"></input>
               <figure class="dropDown-main-img-down">
-                <img src="img/dropDown_Down.svg" alt="expand more">
+                <img src="img/expand_more.svg" alt="expand more">
               </figure>
               <figure class="dropDown-main-img-up">
-                <img src="img/dropDown_Up.svg" alt="expand more">
+                <img src="img/expand_more_up.svg" alt="expand more">
               </figure>
             </div>
             <div class="dropDown-main-list">
@@ -93,13 +155,13 @@
                     <div class="dropDown-main__item">Тюмень</div>
                     <div class="dropDown-main__item">Улан-Удэ</div>
             </div>
-          </div>
+        </div>
         <button class="button application-button">Оставить заявку</button>
         <div class="application-checkbox">
             <input class="custom-checkbox" type="checkbox" id="confirmation" name="confirmation"/>
             <label class="application-checkbox" for="confirmation">Подтверждаю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</label>
         </div>
-      </form>
+    </form>
       <div class="popUp">
         <figure class="application-close popUp-close">
             <img src="img/close-form.svg">
@@ -132,167 +194,168 @@
           <span class="pageAbout">О нас</span>
         </div>
         <section class="aboutUs">
-            <h3 class="main__title">О нас</h3>
-            <div class="main__video-slogan">
-              <video class="video-aboutUs" width="611" height="415" controls="controls">
-                <source src="./video/presentation rev2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-             </video>
-             <figure class="btn-play">
-                <img src="img/btn-play.svg" alt="btn-play">
-             </figure>
-             <div class="slogan">
+          <h3 class="main__title">О нас</h3>
+
+          <div class="main__video-slogan">
+            <video class="video-aboutUs" controls="controls">
+              <source src="./video/presentation rev2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+            <figure class="btn-play">
+              <img src="img/btn-play.svg" alt="btn-play">
+            </figure>
+
+            <div class="slogan">
               <div class="slogan__container">
+                <img src="./img/begin.svg" alt="begin">
                 <div class="slogan__container-title">
-                  <img src="./img/begin.svg" alt="begin">
-                  <h2>Первоочередная задача <br>нашего парка -</h2>
+                  <h2>Первоочередная задача <br>нашего парка-</h2>
                 </div>
                 <h2 class="slogan__container-title-yellow">это повышение дохода водителя</h2>
                 <div class="slogan__container-text">
-                  <h3></h3>
                   <p>Мы не просто даём вам авто в аренду, а мы обучаем, показываем и сопровождаем вас на протяжении всего сотрудничества</p>
                   <img src="./img/end.svg" alt="end">
                 </div>
               </div>
-             </div>
             </div>
-        </section>
-        <section class="ourTeam">
-          <h3 class="main__title">Наша команда</h3>
-          <div class="section2">
-            <div class="section2__inner">
-              <div class="section2__top">
-                <div class="section2__container">
-                  <div class="slider-wrapper">
-                    <div class="slider-line">
+          </div>
+      </section>
+      <section class="ourTeam">
+        <h3 class="main__title">Наша команда</h3>
 
-                      <div class="card">
-                        <div class="card__container">
-                          <img class="card__img" src="img/bruchovskih.jpg" alt="man">
-                          <h2>Брюховских <br>
-                           Владислав</h2>
-                          <p>Операционный директор сети Ё-такси</p>
-                          <p class="card__img-text">Мы - современный, иновационный таксопарк! Наша задача - создать для водителя комфортные условия для стабильного заработка! Мы ждём тебя в нашей команде, коллега!</p>
-                        </div>
-                      </div>
+        <div class="section2">
+          <div class="section2__inner">
+            <div class="section2__top">
+              <div class="section2__container">
+                <div class="slider-wrapper">
+                  <div class="slider-line">
 
-                      <div class="card">
-                        <div class="card__container">
-                         <img class="card__img" src="img/zlobin.jpg" alt="man">
-                          <h2>Злобин <br>Валентин Андреевич</h2>
-                         <p>Руководитель макрорегиона: Восточный</p>
-                         <p class="card__img-text">Наша задача сделать так, чтобы клиенту было во всём удобно, и не важно, насколько это сложно бизнесу</p>
-                        </div>
+                    <div class="card">
+                      <div class="card__container">
+                        <img class="card__img" src="img/bruchovskih.jpg" alt="man">
+                        <h2>Брюховских <br>
+                         Владислав</h2>
+                        <p>Операционный директор сети Ё-такси</p>
+                        <p class="card__img-text">Мы - современный, иновационный таксопарк! Наша задача - создать для водителя комфортные условия для стабильного заработка! Мы ждём тебя в нашей команде, коллега!</p>
                       </div>
-
-                      <div class="card">
-                        <div class="card__container">
-                          <img class="card__img" src="img/dunbinskiy.jpg" alt="man">
-                          <h2>Дунбинский <br> 
-                           Сергей Валерьевич </h2>
-                          <p>Директор Краснояского филиала Ё-такси</p>
-                          <p class="card__img-text">Рынок такси активно развивается и мы развиваемся вместе с ним, ставя перед собой амбициозные цели</p>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card__container">
-                          <img class="card__img" src="img/gubin.jpg" alt="man">
-                          <h2>Губин <br>
-                            Максим</h2>
-                          <p>Руководитель отдела обслуживания <br> водителей в Тюмени</p>
-                        </div>
-                      </div>
-                      
-                      <div class="card">
-                        <div class="card__container">
-                         <img class="card__img" src="img/anushin.jpg" alt="man">
-                          <h2>Анушин <br>Дмитрий Николаевич</h2>
-                         <p>Директор филиала Ё-такси в Улан-Удэ</p>
-                         <p class="card__img-text">Мы постоянно учимся и развиваемся, чтобы качественно предоставлять вам наши услуги!</p>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card__container">
-                         <img class="card__img" src="img/vinogradov.jpg" alt="man">
-                          <h2>Виноградов <br>Вячеслав Константинович</h2>
-                         <p>Директор Новокузнецкого филиала Ё-такси</p>
-                         <p class="card__img-text">С нами Вы сможете получать достойный доход и реализовывать свои планы</p>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card__container">
-                         <img class="card__img" src="./img/oschepkova.jpg" alt="woman">
-                          <h2>Ощепкова <br>Ольга Евгеньевна</h2>
-                         <p>Директор Тюменского филиала Ё-такси</p>
-                         <p class="card__img-text">Масштабным достижениям предшествует масштабное мышление. Наша конкурентоспособность заключается в том, что мы строим бизнес основываясь на потребностях клиента. Для нас - это главная стратегия</p>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card__container">
-                         <img class="card__img" src="./img/klyueva.jpg" alt="woman">
-                          <h2>Клюева <br>Алина</h2>
-                         <p>Менеджер отдела обслуживания водителей</p>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card__container">
-                         <img class="card__img" src="./img/schaschkova.jpg" alt="woman">
-                          <h2>Шашкова <br>Алина Александровна</h2>
-                         <p>Менеджер по набору персонала</p>
-                         <p class="card__img-text">Присоединяйтесь к дружной команде Ё-такси</p>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card__container">
-                         <img class="card__img" src="./img/pavlenko.jpg" alt="man">
-                          <h2>Павленко <br>Александр Юрьевич</h2>
-                         <p>Директор Новосибирского филиала Ё-такси</p>
-                         <p class="card__img-text">Водитель, умеющий считать свои доходы и расходы - это успешный водитель. Мы помогаем водителям добиваться этого успеха</p>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card__container">
-                         <img class="card__img" src="./img/buller.jpg" alt="man">
-                          <h2>Буллер <br>Виталий Федорович</h2>
-                         <p>Директор филиала Ё-такси в Иркутске</p>
-                         <p class="card__img-text">Профессионализм наших менеджеров - залог хорошего дохода водителей</p>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card__container">
-                         <img class="card__img" src="./img/scheblov.jpg" alt="man">
-                          <h2>Шеблов <br>Александр Геннадьевич</h2>
-                         <p>Директор Омского филиала Ё-такси</p>
-                         <p class="card__img-text">Ё-Такси - стабильность и уверенность в завтрашнем дне.</p>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card__container">
-                         <img class="card__img" src="./img/usoltceva.jpg" alt="woman">
-                          <h2>Усольцева <br>Анастасия</h2>
-                         <p>Менеджер отдела продаж Ё-такси</p>
-                        </div>
-                      </div>
-
                     </div>
+
+                    <div class="card">
+                      <div class="card__container">
+                       <img class="card__img" src="img/zlobin.jpg" alt="man">
+                        <h2>Злобин <br>Валентин Андреевич</h2>
+                       <p>Руководитель макрорегиона: Восточный</p>
+                       <p class="card__img-text">Наша задача сделать так, чтобы клиенту было во всём удобно, и не важно, насколько это сложно бизнесу</p>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card__container">
+                        <img class="card__img" src="img/dunbinskiy.jpg" alt="man">
+                        <h2>Дунбинский <br> 
+                         Сергей Валерьевич </h2>
+                        <p>Директор Краснояского филиала Ё-такси</p>
+                        <p class="card__img-text">Рынок такси активно развивается и мы развиваемся вместе с ним, ставя перед собой амбициозные цели</p>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card__container">
+                        <img class="card__img" src="img/gubin.jpg" alt="man">
+                        <h2>Губин <br>
+                          Максим</h2>
+                        <p>Руководитель отдела обслуживания <br> водителей в Тюмени</p>
+                      </div>
+                    </div>
+                    
+                    <div class="card">
+                      <div class="card__container">
+                       <img class="card__img" src="img/anushin.jpg" alt="man">
+                        <h2>Анушин <br>Дмитрий Николаевич</h2>
+                       <p>Директор филиала Ё-такси в Улан-Удэ</p>
+                       <p class="card__img-text">Мы постоянно учимся и развиваемся, чтобы качественно предоставлять вам наши услуги!</p>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card__container">
+                       <img class="card__img" src="img/vinogradov.jpg" alt="man">
+                        <h2>Виноградов <br>Вячеслав Константинович</h2>
+                       <p>Директор Новокузнецкого филиала Ё-такси</p>
+                       <p class="card__img-text">С нами Вы сможете получать достойный доход и реализовывать свои планы</p>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card__container">
+                       <img class="card__img" src="./img/oschepkova.jpg" alt="woman">
+                        <h2>Ощепкова <br>Ольга Евгеньевна</h2>
+                       <p>Директор Тюменского филиала Ё-такси</p>
+                       <p class="card__img-text">Масштабным достижениям предшествует масштабное мышление. Наша конкурентоспособность заключается в том, что мы строим бизнес основываясь на потребностях клиента. Для нас - это главная стратегия</p>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card__container">
+                       <img class="card__img" src="./img/klyueva.jpg" alt="woman">
+                        <h2>Клюева <br>Алина</h2>
+                       <p>Менеджер отдела обслуживания водителей</p>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card__container">
+                       <img class="card__img" src="./img/schaschkova.jpg" alt="woman">
+                        <h2>Шашкова <br>Алина Александровна</h2>
+                       <p>Менеджер по набору персонала</p>
+                       <p class="card__img-text">Присоединяйтесь к дружной команде Ё-такси</p>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card__container">
+                       <img class="card__img" src="./img/pavlenko.jpg" alt="man">
+                        <h2>Павленко <br>Александр Юрьевич</h2>
+                       <p>Директор Новосибирского филиала Ё-такси</p>
+                       <p class="card__img-text">Водитель, умеющий считать свои доходы и расходы - это успешный водитель. Мы помогаем водителям добиваться этого успеха</p>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card__container">
+                       <img class="card__img" src="./img/buller.jpg" alt="man">
+                        <h2>Буллер <br>Виталий Федорович</h2>
+                       <p>Директор филиала Ё-такси в Иркутске</p>
+                       <p class="card__img-text">Профессионализм наших менеджеров - залог хорошего дохода водителей</p>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card__container">
+                       <img class="card__img" src="./img/scheblov.jpg" alt="man">
+                        <h2>Шеблов <br>Александр Геннадьевич</h2>
+                       <p>Директор Омского филиала Ё-такси</p>
+                       <p class="card__img-text">Ё-Такси - стабильность и уверенность в завтрашнем дне.</p>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card__container">
+                       <img class="card__img" src="./img/usoltceva.jpg" alt="woman">
+                        <h2>Усольцева <br>Анастасия</h2>
+                       <p>Менеджер отдела продаж Ё-такси</p>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
-              <div class="section2__nav">
-                <div class="projectSlider">
-                  
-                  <button class="button-prev">
-                    <img src="img/btn-arrow-left.svg" alt="arrowLeft" />
-                  </button>
-                  <div class="dots-wrapper">
+            </div>
+            <div class="section2__nav">
+              <div class="projectSlider">
+                <button class="button-prev">
+                  <img src="img/btn-arrow-left.svg" alt="arrowLeft" />
+                </button>
+                <div class="dots-wrapper">
                   <div class="dot active-dot"></div>
                   <div class="dot"></div>
                   <div class="dot"></div>
@@ -304,91 +367,250 @@
             </div>
           </div>
         </div>
-        </section>
-        <section class="work-algorithm">
-            <div class="work-algorithm-inner">
-              <h3 class="main__title title-work">Как мы работаем</h3>
-              <p class="faq">Часто задаваемые вопросы</p>
-              
-              <div class="faq-list">
+      </section>
+<!-- ======================================================================================================= -->
 
-                <div class="faq-item">
-                  <input class="faq-input" type="checkbox" id="faq_1">
-                  <label class="faq-title" for="faq_1">Есть ли помощь на дорогах?</label>
-                  <div class="faq-text">
-                    <p>От нашей службы безопасности. Вам ответят по телефону, а если возникнут затруднения ‒ <br> приедут на место</p>
-                  </div>
-                </div>
+<!-- слайдер для версии tablet  -->
+<!-- начало -->
+      <section class="ourTeam-tablet">
+<h3 class="main__title-tablet">Наша команда</h3>
 
-                <div class="faq-item">
-                  <input class="faq-input" type="checkbox" id="faq_2">
-                  <label class="faq-title" for="faq_2">Возможен ли карьерный рост?</label>
-                  <div class="faq-text">
-                    <p>Водитель → менеджер → руководитель. Более ⅓ менеджеров ‒ бывшие водители</p>
-                  </div>
-                </div>
+<div class="section2-tablet">
+  <div class="section2__inner-tablet">
+    <div class="section2__top-tablet">
+      <div class="section2__container-tablet">
+        <div class="slider-wrapper-tablet">
+          <div class="slider-line-tablet">
 
-                <div class="faq-item">
-                  <input class="faq-input" type="checkbox" id="faq_3">
-                  <label class="faq-title" for="faq_3">Есть ли выкуп автомобиля?</label>
-                  <div class="faq-text">
-                    <p>На данный момент нет такой услуги</p>
-                  </div>
-                </div>
-
-                <div class="faq-item">
-                  <input class="faq-input" type="checkbox" id="faq_4">
-                  <label class="faq-title" for="faq_4">Существует ли какая-то гарантия заказов?</label>
-                  <div class="faq-text">
-                    <p>У вас будут заказы даже когда их мало. Мы являемся крупнейшим партнёром Яндекс Такси</p>
-                  </div>
-                </div>
-
-                <div class="faq-item">
-                  <input class="faq-input" type="checkbox" id="faq_5">
-                  <label class="faq-title" for="faq_5">Какие есть графики работы?</label>
-                  <div class="faq-text">
-                    <p>Мы предоставляем несколько графиков на выбор:<br>
-                      Мы можем предоставить вам на выбор один из графиков: 2/2, 3/3, 6/1 и др. </p>
-                  </div>
-                </div>
+            <div class="card-tablet">
+              <div class="card__container-tablet">
+                <img class="card__img-tablet" src="img/bruchovskih.jpg" alt="man">
+                <h2>Брюховских <br>
+                 Владислав</h2>
+                <p>Операционный директор сети Ё-такси</p>
               </div>
             </div>
-        </section>
-        <section class="question">
-        <div class="question-inner">
-          <h3 class="question-inner__title">Остались вопросы?</h3>
-          <p class="question-inner__text">Отправьте нам свой вопрос и получите <br> бесплатную консультацию</p>
-          
-          <div class="form__container">
-            <form action="" class="form">
 
-              <div class="form__group">
-                <input type="text" class="form__input" placeholder="Ваше имя">
-                <label for="" class="form__label" ></label>
+            <div class="card-tablet">
+              <div class="card__container-tablet">
+               <img class="card__img-tablet" src="img/zlobin.jpg" alt="man">
+                <h2>Злобин <br>Валентин Андреевич</h2>
+               <p>Руководитель макрорегиона: Восточный</p>
+               <p class="card__img-text-tablet">Наша задача сделать так, чтобы клиенту было во всём удобно, и не важно, насколько это сложно бизнесу</p>
               </div>
+            </div>
 
-              <div class="form__group">
-                <input type="tel" class="form__input" placeholder="Ваш телефон">
-                <label for="" class="form__label"></label>
+            <div class="card-tablet">
+              <div class="card__container-tablet">
+                <img class="card__img-tablet" src="img/dunbinskiy.jpg" alt="man">
+                <h2>Дунбинский <br> 
+                 Сергей Валерьевич </h2>
+                <p>Директор Краснояского филиала Ё-такси</p>
+                <p class="card__img-text-tablet">Рынок такси активно развивается и мы развиваемся вместе с ним, ставя перед собой амбициозные цели</p>
               </div>
+            </div>
+
+            <div class="card-tablet">
+              <div class="card__container-tablet">
+                <img class="card__img-tablet" src="img/gubin.jpg" alt="man">
+                <h2>Губин <br>
+                  Максим</h2>
+                <p>Руководитель отдела обслуживания <br> водителей в Тюмени</p>
+              </div>
+            </div>
             
-              <div class="form__group-big">
-                <textarea class="form__input-big" placeholder="Ваш вопрос"></textarea>
-                <label for="" class="form__label"></label>
+            <div class="card-tablet">
+              <div class="card__container-tablet">
+               <img class="card__img-tablet" src="img/anushin.jpg" alt="man">
+                <h2>Анушин <br>Дмитрий Николаевич</h2>
+               <p>Директор филиала Ё-такси в Улан-Удэ</p>
+               <p class="card__img-text-tablet">Мы постоянно учимся и развиваемся, чтобы качественно предоставлять вам наши услуги!</p>
               </div>
-
-              <button class="form__button" type="submit">Отправить</button>
-
-              <div class="checkbox">
-                <input class="custom-checkbox" type="checkbox" id="question" name="question"/>
-                <label class="application-checkbox" for="question">Подтверждаю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</label>
             </div>
-            </form>
+
+            <div class="card-tablet">
+              <div class="card__container-tablet">
+               <img class="card__img-tablet" src="img/vinogradov.jpg" alt="man">
+                <h2>Виноградов <br>Вячеслав Константинович</h2>
+               <p>Директор Новокузнецкого филиала Ё-такси</p>
+               <p class="card__img-text-tablet">С нами Вы сможете получать достойный доход и реализовывать свои планы</p>
+              </div>
+            </div>
+
+            <div class="card-tablet">
+              <div class="card__container-tablet">
+               <img class="card__img-tablet" src="./img/oschepkova.jpg" alt="woman">
+                <h2>Ощепкова <br>Ольга Евгеньевна</h2>
+               <p>Директор Тюменского филиала Ё-такси</p>
+               <p class="card__img-text-tablet">Масштабным достижениям предшествует масштабное мышление. Наша конкурентоспособность заключается в том, что мы строим бизнес основываясь на потребностях клиента. Для нас - это главная стратегия</p>
+              </div>
+            </div>
+
+            <div class="card-tablet">
+              <div class="card__container-tablet">
+               <img class="card__img-tablet" src="./img/klyueva.jpg" alt="woman">
+                <h2>Клюева <br>Алина</h2>
+               <p>Менеджер отдела обслуживания водителей</p>
+              </div>
+            </div>
+
+            <div class="card-tablet">
+              <div class="card__container-tablet">
+               <img class="card__img-tablet" src="./img/schaschkova.jpg" alt="woman">
+                <h2>Шашкова <br>Алина Александровна</h2>
+               <p>Менеджер по набору персонала</p>
+               <p class="card__img-text-tablet">Присоединяйтесь к дружной команде Ё-такси</p>
+              </div>
+            </div>
+
+            <div class="card-tablet">
+              <div class="card__container-tablet">
+               <img class="card__img-tablet" src="./img/pavlenko.jpg" alt="man">
+                <h2>Павленко <br>Александр Юрьевич</h2>
+               <p>Директор Новосибирского филиала Ё-такси</p>
+               <p class="card__img-text-tablet">Водитель, умеющий считать свои доходы и расходы - это успешный водитель. Мы помогаем водителям добиваться этого успеха</p>
+              </div>
+            </div>
+
+            <div class="card-tablet">
+              <div class="card__container-tablet">
+               <img class="card__img-tablet" src="./img/buller.jpg" alt="man">
+                <h2>Буллер <br>Виталий Федорович</h2>
+               <p>Директор филиала Ё-такси в Иркутске</p>
+               <p class="card__img-text-tablet">Профессионализм наших менеджеров - залог хорошего дохода водителей</p>
+              </div>
+            </div>
+
+            <div class="card-tablet">
+              <div class="card__container-tablet">
+               <img class="card__img-tablet" src="./img/scheblov.jpg" alt="man">
+                <h2>Шеблов <br>Александр Геннадьевич</h2>
+               <p>Директор Омского филиала Ё-такси</p>
+               <p class="card__img-text-tablet">Ё-Такси - стабильность и уверенность в завтрашнем дне.</p>
+              </div>
+            </div>
+
+            <div class="card-tablet">
+              <div class="card__container-tablet">
+               <img class="card__img-tablet" src="./img/usoltceva.jpg" alt="woman">
+                <h2>Усольцева <br>Анастасия</h2>
+               <p>Менеджер отдела продаж Ё-такси</p>
+              </div>
+            </div>
+
           </div>
         </div>
-        <img class="question__img" src="./img/question-img.jpg" alt="questionImg">
-        </section>
+      </div>
+    </div>
+    <div class="section2__nav-tablet">
+      <div class="projectSlider-tablet">
+        <button class="button-prev-tablet">
+          <img src="img/btn-arrow-left.svg" alt="arrowLeft" />
+        </button>
+        <div class="dots-wrapper-tablet">
+          <div class="dot active-dot-tablet"></div>
+          <div class="dot-tablet"></div>
+          <div class="dot-tablet"></div>
+        </div>
+        <button class="button-next-tablet">
+          <img src="img/btn-arrow-right.svg" alt="arrowRight" />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+      </section>
+<!-- ======================================================================================================= -->
+<!-- слайдер для версии tablet  -->
+<!-- окончание -->
+
+      <section class="work-algorithm">
+          <div class="work-algorithm-inner">
+            <h3 class="main__title title-work">Как мы работаем</h3>
+            <p class="faq">Часто задаваемые вопросы</p>
+            
+            <div class="faq-list">
+
+              <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq_1">
+                <label class="faq-title" for="faq_1">Есть ли помощь на дорогах?</label>
+                <div class="faq-text">
+                  <p>От нашей службы безопасности. Вам ответят по телефону, а если возникнут затруднения ‒ <br> приедут на место</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq_2">
+                <label class="faq-title" for="faq_2">Возможен ли карьерный рост?</label>
+                <div class="faq-text">
+                  <p>Водитель → менеджер → руководитель. Более ⅓ менеджеров ‒ бывшие водители</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq_3">
+                <label class="faq-title" for="faq_3">Есть ли выкуп автомобиля?</label>
+                <div class="faq-text">
+                  <p>На данный момент нет такой услуги</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq_4">
+                <label class="faq-title" for="faq_4">Существует ли какая-то гарантия заказов?</label>
+                <div class="faq-text">
+                  <p>У вас будут заказы даже когда их мало. Мы являемся крупнейшим партнёром Яндекс Такси</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq_5">
+                <label class="faq-title" for="faq_5">Какие есть графики работы?</label>
+                <div class="faq-text">
+                  <p>Мы предоставляем несколько графиков на выбор:<br>
+                    Мы можем предоставить вам на выбор один из графиков: 2/2, 3/3, 6/1 и др. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="question">
+      <div class="question-inner">
+        <h3 class="question-inner__title">Остались вопросы?</h3>
+        <p class="question-inner__text">Отправьте нам свой вопрос и получите <br> бесплатную консультацию</p>
+        
+        <div class="form__container">
+          <form action="" class="form">
+
+            <div class="form__group">
+              <input type="text" class="form__input" placeholder="Ваше имя">
+              <label for="" class="form__label" ></label>
+            </div>
+
+            <div class="form__group">
+              <input type="tel" class="form__input" placeholder="Ваш телефон">
+              <label for="" class="form__label"></label>
+            </div>
+          
+            <div class="form__group-big">
+              <textarea class="form__input-big" placeholder="Ваш вопрос"></textarea>
+              <label for="" class="form__label"></label>
+            </div>
+
+            <button class="form__button" type="submit">Отправить</button>
+
+            <div class="checkbox">
+              <input class="custom-checkbox" type="checkbox" id="question" name="question"/>
+              <label class="application-checkbox" for="question">Подтверждаю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</label>
+          </div>
+          </form>
+        </div>
+      </div>
+      <img class="question__img" src="./img/question-img.jpg" alt="questionImg">
+      <img class="question__img-tablet" src="./img/question-img-tablet.jpg" alt="questionImgTablet">
+
+      </section>
       </div>
   </main>
   <footer class="footer">
@@ -415,13 +637,11 @@
         </div>
         <div class="footer__down">
           <div class="copyright">&#9400 2023 Все права защищены</div>
+          <div class="copyright-tablet">&#9400 2023 Ё такси</div>
           <nav class="nav-footer">
             <ul class="nav-list">
               <li class="nav__item-footer">
                 <a class="nav__link-footer" href="index.html#catalog">Каталог</a>
-              </li>
-              <li class="nav__item-footer">
-                <a class="nav__link-footer" href="pageAboutUs.html#about">О нас</a>
               </li>
               <li class="nav__item-footer">
                 <a class="nav__link-footer" href="index.html#rent">Условия аренды</a>
@@ -430,7 +650,10 @@
                 <a class="nav__link-footer" href="index.html#reviews">Отзывы</a>
               </li>
               <li class="nav__item-footer">
-                <a class="nav__link-footer" href="pageContacts.html">Контакты</a>
+                <a class="nav__link-footer" href="pageContacts.html#contacts">Контакты</a>
+              </li>
+              <li class="nav__item-footer">
+                <a class="nav__link-footer" href="pageAboutUs.html#about">О нас</a>
               </li>
             </ul>
           </nav>
