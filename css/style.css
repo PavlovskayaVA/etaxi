@@ -1397,6 +1397,7 @@ img {
   .video-item {
     border-radius: 20px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
   }
   
   video {
@@ -1445,7 +1446,7 @@ img {
 }
 
 .gallery-item {
-    height: 258x;
+    height: 258px;
     opacity: 0;
     width: 300px;
     z-index: 0;
@@ -1517,7 +1518,7 @@ img {
 
     .gallery {
         max-width: 320px;
-        height: 268px;
+        height: 289px;
     }
       
     .gallery-container {
@@ -1526,7 +1527,7 @@ img {
     }
     
     .gallery-item {
-        height: 258x;
+        height: 180px;
         opacity: 0;
         width: 320px;
         z-index: 0;
@@ -1581,6 +1582,12 @@ img {
         height: 10px;
         margin: 0 16px;
         width: 10px;
+      }
+
+      .video-item-4, .video-item-5 {
+        width: 320px;
+        min-height: 180px;
+        object-fit: cover;
       }
       
     }
@@ -2998,6 +3005,12 @@ iframe {
     }
 }
 
+@media (max-width: 768x)  {
+    .application-button {
+        width: 320px;
+    }
+
+}
 
 @media (max-width: 360px)  {
     .application-form {
@@ -3007,7 +3020,7 @@ iframe {
     }
 
     .application-button {
-        width: 320px;
+        width: 240px;
     }
 
     .dropDown-main-list {

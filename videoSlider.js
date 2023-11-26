@@ -65,4 +65,29 @@ const exampleCarousel = new Carousel(
 exampleCarousel.setControls();
 exampleCarousel.useControls();
 
- 
+/*Воспроизведение видео по клику*/
+let videoActive = document.querySelectorAll('.video-item')
+let videoStop = document.querySelector('.gallery-controls')
+
+videoActive.forEach ((activeVideo) => {
+  activeVideo.addEventListener('click', playVideo)
+
+  function playVideo(){
+    activeVideo.removeEventListener('click',playVideo);
+    activeVideo.addEventListener('click',pauseVideo);
+    activeVideo.play();
+}
+
+  function pauseVideo(){
+    activeVideo.removeEventListener('click',pauseVideo);
+    activeVideo.addEventListener('click',playVideo);
+    activeVideo.pause();
+  }
+
+  videoStop.addEventListener('click', stopVideo)
+
+  function stopVideo(){
+    activeVideo.pause();
+  }
+
+})

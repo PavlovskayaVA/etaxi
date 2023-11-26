@@ -352,3 +352,6 @@ controllsCatalog.forEach((e) => {
 })
 
 showCatalog(imageIndexCatalog);
+
+
+
