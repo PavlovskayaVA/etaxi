@@ -75,7 +75,7 @@ img {
   margin-top: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   .return {
     display: none;
   }
@@ -398,4 +398,14 @@ img {
 .dropDown-contacts__item:hover {
   color: #222;
   background-color: #e6e6e6;
+}
+
+
+@media (max-width: 360px)  {
+  #catalog:before, #rent:before, #reviews:before, #contacts::before {
+      display: block;
+      content: "";
+      height: 130px;
+      margin: -66px;
+  }
 }
