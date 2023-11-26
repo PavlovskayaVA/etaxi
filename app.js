@@ -380,3 +380,7 @@ videoActive.forEach ((activeVideo) => {
 
 })
 
+
+/*Переход по ссылкам-якорям из формы*/
+let menuBurgerItems = document.querySelector('.menu-burger__items');
+menuBurgerItems.addEventListener('click', closeBurgerMenu);

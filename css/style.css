@@ -1074,7 +1074,7 @@ img {
     height: 100%;
     top: 0px;
     right: -20px;
-    background: url('../img/terms.svg') no-repeat;
+    background: url('../img/yandex-icon.svg') no-repeat;
     background-position-y: center;
 }
 
@@ -3029,4 +3029,11 @@ iframe {
 
 }
 
-
+@media (max-width: 360px)  {
+    #catalog:before, #rent:before, #reviews:before, #contacts::before {
+        display: block;
+        content: "";
+        height: 130px;
+        margin: 30px 0 0;
+    }
+}
