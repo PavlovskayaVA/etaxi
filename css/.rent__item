@@ -1111,7 +1111,7 @@ img {
         height: 100%;
         top: 0px;
         right: -18px;
-        background: url('../img/terms.svg') no-repeat;
+        background: url('../img/yandex-icon.svg') no-repeat;
         background-position-y: center;
     }
 }
@@ -1150,7 +1150,7 @@ img {
         height: 100%;
         top: 0px;
         right: -18px;
-        background: url('../img/terms.svg') no-repeat;
+        background: url('../img/yandex-icon.svg') no-repeat;
         background-position-y: center;
     }
 }
@@ -3005,12 +3005,7 @@ iframe {
     }
 }
 
-@media (max-width: 768px)  {
-    .application-button {
-        width: 320px;
-    }
 
-}
 
 @media (max-width: 360px)  {
     .application-form {
