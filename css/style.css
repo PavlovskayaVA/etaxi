@@ -3017,6 +3017,10 @@ iframe {
         left: 238px;
     }
 
+    .application-formBurger {
+        height: 2000px;
+    }
+
     .application-button {
         width: 240px;
     }
