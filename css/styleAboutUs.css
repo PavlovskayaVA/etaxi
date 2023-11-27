@@ -83,19 +83,25 @@
 
 @media (max-width: 360px) {
   .main__title,
-  .main__title-tablet {
+  .main__title-tablet,
+  .main__title-mobile {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
     width: 320px;
     margin: 0;
+    text-align: center;
   }
 
   .main__title-tablet {
     margin-top: 80px;
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  .main__title-mobile {
+    margin-bottom: 28px;
   }
 }
 
@@ -377,6 +383,18 @@
   }
 }
 
+/* 27 */
+
+.ourTeam-mobile {
+  display: none;
+}
+
+@media (max-width: 360px) {
+  .ourTeam-mobile {
+    display: block;
+  }
+}
+
 .ourTeam__title {
   font-family: "Bliss Pro", sans-serif;
   font-size: 40px;
@@ -470,6 +488,12 @@
   left: 0px;
 }
 
+.slider-line-mobile {
+  display: flex;
+  position: relative;
+  left: 0px;
+}
+
 .projectSlider {
   height: 20px;
   display: flex;
@@ -477,7 +501,8 @@
   align-items: center;
 }
 
-.projectSlider-tablet {
+.projectSlider-tablet,
+.projectSlider-mobile {
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -499,6 +524,14 @@
 
 .button-prev-tablet,
 .button-next-tablet {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: none;
+}
+
+.button-prev-mobile,
+.button-next-mobile {
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -579,12 +612,16 @@
   margin-bottom: 80px;
 }
 
-.section2__inner {
+.section2-mobile {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 320px;
+  height: 532px;
+  margin-bottom: 50px;
 }
 
+.section2__inner,
 .section2__inner-tablet {
   display: flex;
   flex-direction: column;
@@ -607,6 +644,14 @@
   margin-top: 0px;
 }
 
+.section2__nav-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 88px;
+  margin-top: 25px;
+}
+
 .section2__top {
   display: flex;
   flex-direction: column;
@@ -621,6 +666,14 @@
   align-items: flex-start;
   width: 680px;
   height: 414px;
+}
+
+.section2__top-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 320px;
+  height: 468px;
 }
 
 .card__container {
@@ -645,6 +698,28 @@
   align-items: flex-start;
 }
 
+.card__container-mobile {
+  width: 320px;
+  height: 468px;
+  border: 1px solid #aaa;
+  margin-right: 40px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__container-mobile-item {
+  display: flex;
+
+  width: 320px;
+  height: 148px;
+  border-radius: 16px;
+  border: 1px solid var(--Grey, #cbccce);
+  background: var(--White, #fff);
+  margin-bottom: 5px;
+}
+
 .card__img {
   width: 380px;
   height: 420px;
@@ -656,6 +731,13 @@
   width: 218px;
   height: 244px;
   border-radius: 20px;
+  background: #d6cece;
+}
+
+.card__img-mobile {
+  width: 130px;
+  height: 146px;
+  border-radius: 14px;
   background: #d6cece;
 }
 
@@ -679,6 +761,16 @@
   margin: 16px 0 8px 16px;
 }
 
+.card__container-mobile h2 {
+  font-family: "BlissPro", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: start;
+  margin: 19px 20px 0 11px;
+}
+
 .card__container p {
   font-family: "BlissPro", sans-serif;
   font-size: 16px;
@@ -699,9 +791,29 @@
   margin: 0 0 25px 16px;
 }
 
+.card__container-mobile p {
+  font-family: "BlissPro", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: start;
+  margin: 0 20px 20px 11px;
+}
+
 .card__img-text {
   width: 305px;
   height: 120px;
+}
+
+.card__img-text-mobile {
+  color: var(--Dark_light, #5e5e5e);
+  /* Body_regular */
+  font-family: Bliss Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
 }
 
 .work-algorithm {
