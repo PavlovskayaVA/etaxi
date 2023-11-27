@@ -162,6 +162,86 @@ nextButtonTablet.addEventListener("click", nextSlideTextTablet);
 
 prevButtonTablet.addEventListener("click", prevSlideTablet);
 prevButtonTablet.addEventListener("click", prevSlideTextTablet);
+//слайдер для планшета окончание
+
+// слайдер для страницы О нас, версия mobile начало
+const sliderLineMobile = document.querySelector(".slider-line-mobile");
+
+const nextButtonMobile = document.querySelector(".button-next-mobile");
+const prevButtonMobile = document.querySelector(".button-prev-mobile");
+const dotsMobile = document.querySelectorAll(".dot-mobile");
+
+let positionMobile = 0;
+let positionTextMobile = 0;
+let dotIndexMobile = 0;
+let linkIndexMobile = dotIndexMobile;
+
+const nextSlideMobile = () => {
+  if (position < (4 - 1) * 360) {
+    position += 360;
+  } else {
+    position = 0;
+  }
+  sliderLineMobile.style.left = -position + "px";
+};
+
+const nextSlideTextMobile = () => {
+  if (positionTextMobile < 880) {
+    positionTextMobile += 440;
+    dotIndexMobile++;
+    linkIndexMobile++;
+  } else {
+    positionTextMobile = 0;
+    dotIndexMobile = 0;
+    linkIndexMobile = 0;
+  }
+  sliderLineTextMobile.style.left = -positionText + "px";
+  thisSlide(dotIndexMobile);
+  thisLink(linkIndexMobile);
+};
+
+const prevSlideMobile = () => {
+  if (position > 0) {
+    position -= 360;
+  } else {
+    position = (4 - 1) * 360;
+  }
+  sliderLineMobile.style.left = -position + "px";
+  thisSlide(dotIndexMobile);
+  thisLink(linkIndexMobile);
+};
+
+const prevSlideTextMobile = () => {
+  if (positionText > 0) {
+    positionText -= 440;
+    dotIndexMobile--;
+    linkIndexMobile--;
+  } else {
+    positionTextMobile = 880;
+    dotIndexMobile = dotsMobile.length - 1;
+    linkIndexMobile = links.length - 1;
+  }
+  sliderLineText.style.left = -positionText + "px";
+  thisSlide(dotIndex);
+  thisLink(linkIndex);
+};
+
+const thisSlideMobile = (index) => {
+  for (let dotMobile of dotsMobile) {
+    dotMobile.classList.remove("active-dot");
+  }
+  dotsMobile[index].classList.add("active-dot");
+};
+
+nextButtonMobile.addEventListener("click", nextSlideMobile);
+nextButtonMobile.addEventListener("click", nextSlideTextMobile);
+
+prevButtonMobile.addEventListener("click", prevSlideMobile);
+prevButtonMobile.addEventListener("click", prevSlideTextMobile);
+// слайдер для страницы О нас, версия mobile окончание
+
+
+
 /*Закрытие формы по клику на фон*/
 document.addEventListener('click', (e) => {
   const click1 = e.composedPath().includes(applicationForm);
