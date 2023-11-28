@@ -122,7 +122,7 @@ img {
   .main__title-select {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .main__title-select .dropDown-contacts {
@@ -346,10 +346,8 @@ img {
 
 .dropDown-contacts-selectCity {
   display: flex;
-  justify-content: space-between;
   background-color: #fff;
   height: 52px;
-  width: 192px;
 }
 
 @media (max-width: 360px) {
@@ -368,26 +366,13 @@ img {
   font-weight: 400;
   line-height: 24px;
   padding: 14px 20px;
-}
-
-@media (max-width: 768px) {
-  .dropDown-contacts-city {
-    padding-left: 0;
-  }
-}
-
-@media (max-width: 360px) {
-  .dropDown-contacts-city {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    padding: 14px 5px;
-  }
+  margin-right: 16px;
 }
 
 .dropDown-contacts-img-down,
 .dropDown-contacts-img-up {
+  display: flex;
+  flex-shrink: 0;
   margin-top: 14px;
   width: 24px;
   height: 24px;
@@ -409,6 +394,33 @@ img {
   border-radius: 10px;
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
 }
+
+@media (max-width: 768px) {
+  .dropDown-contacts-city {
+    padding: 20px 0;
+  }
+
+  .dropDown-contacts-img-down,
+  .dropDown-contacts-img-up {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .dropDown-contacts-city {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 14px 0 14px 5px;
+  }
+
+  .dropDown-contacts-img-down,
+  .dropDown-contacts-img-up {
+    margin-top: 14px;
+  }
+}
+
 
 .dropDown-contacts__item {
   display: flex;
@@ -441,7 +453,6 @@ iframe {
 
   .dropDown-contacts-list {
     margin-left: -18px;
-    margin-top: -10px;
   }
 
 }
