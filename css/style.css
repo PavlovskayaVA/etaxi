@@ -491,6 +491,10 @@ img {
 
 
 @media (max-width: 768px)  {
+    .title {
+        line-height: 44px;
+    }
+
     .main-block {
         max-width: 768px;
         height: auto;
@@ -719,7 +723,7 @@ img {
 
 @media (max-width: 768px)  {
     .advantages {
-        margin: 134px 0 140px;
+        margin: 102px 0 100px;
     }
     
     .advantages-inner {
@@ -775,7 +779,7 @@ img {
 
 @media (max-width: 360px)  {
     .advantages {
-        margin: 96px 0;
+        margin: 64px 0;
     }
 
     .advantages-title {
@@ -931,7 +935,7 @@ img {
 
 @media (max-width: 768px)  {
     .catalog {
-        margin: 0 0 128px;
+        margin: 0 0 68px;
     }
     
     .catalog-inner {
@@ -974,7 +978,8 @@ img {
 
 @media (max-width: 360px)  {
     .catalog {
-        margin-bottom: 156px;
+        margin-bottom: 0;
+        margin-top: -134px;
     }
 
     .catalog-title {
@@ -986,6 +991,7 @@ img {
     .catalog-age {
         font-size: 18px;
         line-height: 24px;
+        margin-bottom: 28px;
     }
 
     .catalog-inner {
@@ -1086,7 +1092,7 @@ img {
     }
     
     .rent-list {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
     
     .rent__item {
@@ -1114,7 +1120,7 @@ img {
         right: -18px;
         background: url('../img/yandex-icon.svg') no-repeat;
         background-position-y: center;
-	background-size: 40px;
+        background-size: 40px;
     }
 }
 
@@ -1154,7 +1160,7 @@ img {
         right: -18px;
         background: url('../img/yandex-icon.svg') no-repeat;
         background-position-y: center;
-	background-size: 40px;
+        background-size: 40px;
     }
 }
 
@@ -1252,7 +1258,7 @@ img {
     }
 
     .stage-rent-inner {
-        margin-bottom: 76px;
+        margin-bottom: 64px;
     }
 
     .stage-rent__item {
@@ -1506,11 +1512,16 @@ img {
     width: 10px;
   }
   
+  .reviews {
+    margin: 100px 0px;
+}
+  
 }
 
 @media (max-width: 360px)  {
     .reviews {
         margin: 0;
+        margin-top: -130px;
     }
 
     .reviews-title {
@@ -1718,7 +1729,7 @@ img {
 @media (max-width: 768px)  {
     #reviews-text__slider {
         margin-bottom: 0;
-        margin-top: 80px;
+        margin-top: 60px;
         max-width: 700px;
     }
       
@@ -1745,7 +1756,7 @@ img {
 
 @media (max-width: 360px)  {
     #reviews-text__slider {
-        margin-top: 48px;
+        margin-top: 64px;
         max-width: 320px;
     }
       
@@ -1968,8 +1979,8 @@ img {
 
 @media (max-width: 360px)  {
     .offers {
-        margin-top: 96px;
-        margin-bottom: 96px;
+        margin-top: 64px;
+        margin-bottom: 64px;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -2150,6 +2161,7 @@ iframe {
 @media (max-width: 360px)  {
     .contacts {
         max-width: 360px;
+        margin-top: -130px;
     }
      
     .contacts__address {
