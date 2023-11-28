@@ -465,4 +465,8 @@ iframe {
       margin: -66px;
       max-width: 360px;
   }
+
+    .application-button {
+    width: 320px;
+  }
 }
