@@ -35,6 +35,7 @@ body {
     .container {
         max-width: 320px;
         padding: 0;
+	position: relative;
     }
 }
 
@@ -3064,7 +3065,7 @@ iframe {
 @media (max-width: 767px)  {
     .actual-city {
         top: 100px;
-        left: 25%;
+        left: 0;
     }
 
     .popUp {
