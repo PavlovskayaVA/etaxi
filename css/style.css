@@ -1303,6 +1303,7 @@ img {
         min-height: 144px;
         height: 144px;
         padding: 20px 24px;
+	margin-right: 0;
     }
     
     .stage-rent-number {
