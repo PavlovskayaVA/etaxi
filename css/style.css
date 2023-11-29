@@ -1172,8 +1172,10 @@ img {
     .rent__item {
         max-width: 320px;
         height: 72px;
+	font-size: 18px;
+        line-height: 24px;
     }
-    
+	
     .rent__item:first-child {
         margin-right: 0px;
         margin-bottom: 18px;
