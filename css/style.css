@@ -24,14 +24,14 @@ body {
 }
 
 
-@media (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1439px)  {
     .container {
         max-width: 700px;
         padding: 0;
     }
 }
 
-@media (max-width: 360px)  {
+@media  (max-width: 767px)   {
     .container {
         max-width: 320px;
         padding: 0;
@@ -222,9 +222,12 @@ img {
     height: 44px;
 }
 
-@media (max-width: 768px)  {
-    .header-top {
+@media (min-width: 768px) and (max-width: 1439px)  {
+    .header-description {
         position: relative;
+    }
+
+    .header-top {
         justify-content: flex-start;
         padding-top: 10px;
         max-width: 579px;
@@ -252,8 +255,8 @@ img {
     
     .header-nav__button {
         position: absolute;
-        top: 24px;
-        right: 34px;
+        top: 0;
+        right: 0;
     }
 
     .header-bottom {
@@ -271,7 +274,11 @@ img {
     }
 }
 
-@media (max-width: 360px)  {
+@media (max-width: 767px)  {
+    .header-mode, .operating-mode  {
+        display: none;
+    }
+
     .header-logo {
         width: 40px;
         height: 50px;
@@ -283,6 +290,7 @@ img {
     }
 
     .header-top {
+        justify-content: flex-start;
         padding-top: 0;
     }
 
@@ -490,7 +498,7 @@ img {
 }
 
 
-@media (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1439px) {
     .title {
         line-height: 44px;
     }
@@ -500,6 +508,7 @@ img {
         height: auto;
         overflow: hidden;
         border-bottom: none;
+        margin: 0 auto;
     }
 
     .main-right, .main-left {
@@ -579,17 +588,28 @@ img {
 }
 
 
-@media (max-width: 360px)  {
+@media  (max-width: 767px)   {
+    .main {
+        position: relative;
+    }
+
     .main-block {
         max-width: 360px;
+        margin: 0 auto;
+        border-bottom: none;
     }
 
     .main-left {
         width: 320px;
+        position: absolute;
+        top: -104px;
     }
 
     .main-right {
+        position: absolute;
         max-width: 320px;
+        margin-top: 0;
+        margin-left: 0;
     }
 
     .main-img {
@@ -600,10 +620,13 @@ img {
         background: url('../img/background-car_360.png') no-repeat;
     }
 
+    .main-img img {
+        display: none;
+    }
+
     .main-text {
-        padding-left: 34px;
         padding-top: 374px;
-        margin-top: 0px;
+        margin-top: 114px;
         margin-left: 0px;
     }
 
@@ -624,7 +647,7 @@ img {
 
     .main-title {
         margin-top: 40px;
-        margin-bottom: 302px;
+        margin-bottom: 314px;
         width: 320px;
         font-size: 24px;
         line-height: 32px;
@@ -721,7 +744,7 @@ img {
     display: none;
 }
 
-@media (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1439px)  {
     .advantages {
         margin: 102px 0 100px;
     }
@@ -777,9 +800,9 @@ img {
 }
 
 
-@media (max-width: 360px)  {
+@media (max-width: 767px)  {
     .advantages {
-        margin: 64px 0;
+        margin: 128px 0;
     }
 
     .advantages-title {
@@ -933,7 +956,7 @@ img {
 }
 
 
-@media (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1439px)  {
     .catalog {
         margin: 0 0 68px;
     }
@@ -976,16 +999,25 @@ img {
 }
 
 
-@media (max-width: 360px)  {
+@media (max-width: 767px)   {
     .catalog {
         margin-bottom: 0;
         margin-top: -134px;
+    }
+
+
+    .catalog-img {
+        margin: 0 auto 8px;
     }
 
     .catalog-title {
         font-size: 24px;
         line-height: 32px;
         margin-bottom: 4px;
+    }
+
+    .catalog-text {
+        margin-bottom: 28px;
     }
       
     .catalog-age {
@@ -1086,7 +1118,7 @@ img {
 }
 
 
-@media (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1439px)  {
     .rent-title {
         font-size: 36px;
     }
@@ -1124,7 +1156,7 @@ img {
     }
 }
 
-@media (max-width: 360px)  {
+@media  (max-width: 767px)   {
     .rent-title {
         font-size: 24px;
         line-height: 32px;
@@ -1209,7 +1241,7 @@ img {
 } 
 
 
-@media (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1439px) {
     .stage-rent-inner {
         margin-bottom: 20px;
     }
@@ -1250,11 +1282,15 @@ img {
     } 
 }
 
-@media (max-width: 360px)  {
+@media (max-width: 767px)  {
     .stage-rent-title {
         font-size: 24px;
         line-height: 32px;
         margin-bottom: 28px;
+    }
+
+    .stage-rent-subtitle {
+        margin-bottom: 4px;
     }
 
     .stage-rent-inner {
@@ -1262,18 +1298,23 @@ img {
     }
 
     .stage-rent__item {
-        max-width: 320px;
+        display: flex;
+        min-width: 320px;
         min-height: 144px;
         height: 144px;
+        padding: 20px 24px;
     }
     
     .stage-rent-number {
         margin-right: 14px;
+        font-size: 64px;
+        margin-top: 16px;
     }
 
     .stage-rent-connect {
         display: none;
     }
+    
 }
 
 
@@ -1443,7 +1484,7 @@ img {
     cursor: pointer;
 }
 
-@media (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1439px)  {
 .gallery {
     max-width: 700px;
     height: 370px;
@@ -1518,7 +1559,7 @@ img {
   
 }
 
-@media (max-width: 360px)  {
+@media (max-width: 767px)   {
     .reviews {
         margin: 0;
         margin-top: -130px;
@@ -1726,7 +1767,7 @@ img {
 
 
 
-@media (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1439px)  {
     #reviews-text__slider {
         margin-bottom: 0;
         margin-top: 60px;
@@ -1754,7 +1795,7 @@ img {
     }   
 }
 
-@media (max-width: 360px)  {
+@media (max-width: 767px)   {
     #reviews-text__slider {
         margin-top: 64px;
         max-width: 320px;
@@ -1934,7 +1975,7 @@ img {
     font-weight: 400;
 }
 
-@media (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1439px)  {
     .offers {
         margin-bottom: 100px;
     }
@@ -1977,7 +2018,7 @@ img {
     }
 }
 
-@media (max-width: 360px)  {
+@media (max-width: 767px)   {
     .offers {
         margin-top: 64px;
         margin-bottom: 64px;
@@ -2105,7 +2146,7 @@ iframe {
     margin-left: 10px;
 }
 
-@media (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1439px)  {
     .contacts {
         max-width: 700px;
     }
@@ -2158,15 +2199,30 @@ iframe {
     }
 }
 
-@media (max-width: 360px)  {
+@media (max-width: 767px)  {
+    .map {
+        position: absolute;
+        margin-top: 92px;
+        left: 50%;
+        width: 360px;
+        margin-left: -180px;
+        overflow: hidden;
+    }
+
+    iframe {
+        margin-left: 0;
+        height: 348px;
+    }
+
     .contacts {
         max-width: 360px;
-        margin-top: -130px;
+        margin-top: -216px;
     }
      
     .contacts__address {
         width: 320px;
-        height: 310px;
+        height: 0;
+        margin-top: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -2176,11 +2232,11 @@ iframe {
         font-size: 24px;
         line-height: 32px;
         text-align: center;
-        margin-bottom: 392px;
+        margin-bottom: 408px;
     }
       
     .contacts__address-total {
-        margin-top: 0;
+        margin-top: 28px;
         height: 140px;
     }
 
@@ -2206,14 +2262,7 @@ iframe {
         margin: 0 auto;
         margin-top: 20px;
     }
-    
-    .map {
-        top: 58px;
-        left: -60px;
-        width: 390px;
-        height: 348px;
-        overflow: hidden;
-    }
+
 }
 
 /*Footer*/
@@ -2321,7 +2370,7 @@ iframe {
     display: none;
 }
 
-@media (max-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1439px)  {
     .footer {
         margin-top: 532px;
     }
@@ -2384,9 +2433,9 @@ iframe {
     }
 }
 
-@media (max-width: 360px)  {
+@media  (max-width: 767px)   {
     .footer {
-        margin-top: 400px;
+        margin-top: 602px;
     }
     
     .footer-inner {
@@ -3008,25 +3057,22 @@ iframe {
     background-color: #E6E6E6;
 }
 
-@media (max-width: 360px)  {
+@media (max-width: 767px)  {
     .actual-city {
         top: 100px;
-        left: 0;
+        left: 25%;
     }
 
     .popUp {
         top: 422px;
-        left: 180px;
+        left: 50%;
     }
-}
 
-
-
-@media (max-width: 360px)  {
     .application-form {
         width: 320px;
         height: 519px;
-        left: 238px;
+        left: 50%;
+        margin-left: -160px;
     }
 
     .application-formBurger {
@@ -3041,9 +3087,6 @@ iframe {
         width: 240px;
     }
 
-}
-
-@media (max-width: 360px)  {
     #catalog:before, #rent:before, #reviews:before, #contacts::before {
         display: block;
         content: "";
@@ -3051,3 +3094,4 @@ iframe {
         margin: 0;
     }
 }
+
